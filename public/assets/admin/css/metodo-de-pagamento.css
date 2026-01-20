@@ -1,0 +1,177 @@
+
+.red_form_check_custom { filter: hue-rotate(150deg) } /* Vermelho */
+
+
+input[type=checkbox] {
+  transform: scale(1.7);
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Prevent cursor being `text` between checkboxes */
+body { cursor: default }
+
+
+@font-face {
+    font-family: 'Inter Bold';
+    src: url('fonts/Inter-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter SemiBold';
+    src: url('fonts/Inter-SemiBold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.titulosInterBold {
+    font-family: 'Inter Bold', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.titulosInterSemiBold {
+    font-family: 'Inter SemiBold', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+
+
+@font-face {
+  font-family: 'Creata Bold';
+  src: url('fonts/creata-bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Creata Regular';
+  src: url('fonts/Creata-Regular.ttf') format('opentype');
+  font-style: normal;
+}
+
+.bottomFixButtonComponent {
+  position: sticky;
+  bottom: 0px;
+  padding: 10px 20px;
+  background: #FF3000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.creataBold {
+  font-family: 'Creata Bold', sans-serif;
+  font-weight: 38;
+  font-size: 18px;
+  color: white;
+  margin: 0;
+}
+
+.bandeirasCreataBold {
+  font-family: 'Creata Regular', sans-serif;
+  font-weight: 38;
+  font-size: 16px;
+  color: #484848;
+  margin: 0;
+}
+
+.titulosCreataBold {
+  font-family: 'Creata Bold', sans-serif;
+  font-weight: 38;
+  font-size: 20px;
+  color: #000000;
+  margin: 0;
+}
+
+.saveButton {
+  font-family: 'Creata Bold', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FF3000;
+  background: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.saveButton:hover {
+  background: #f2f2f2;
+}
+
+
+.extra-bold-large {
+  font-weight: 800; /* Extra Bold */
+  font-size: 29px;
+}
+
+
+
+ /* Estilo do botão de toggle */
+    .toggle-button {
+        position: relative;
+        width: 60px;
+        height: 30px;
+        background-color: #ccc;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .toggle-button .toggle-circle {
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 24px;
+        height: 24px;
+        background-color: white;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+
+    .toggle-button.active {
+        background-color: red;
+    }
+
+    .toggle-button.active .toggle-circle {
+        left: calc(100% - 27px); /* Ajusta a posição da bolinha */
+    }
+
+    .toggle-label {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    
+    
+    @media (width >= 1465px) {
+        .configuracoes-mp {
+            width: 100%;
+            margin-right: 55px;
+        }
+        .spanIcon {
+            float: right;
+        }
+        .textoMP {
+            display: none;
+        }
+
+    }
+
+    @media (width <= 1465px) {
+        .textoMP {
+            display: inline;
+        }
+        .textoMPResponsivo {
+            display: none;
+        }
+    }
+
+

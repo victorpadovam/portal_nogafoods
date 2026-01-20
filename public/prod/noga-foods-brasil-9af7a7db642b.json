@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "noga-foods-brasil",
+  "private_key_id": "9af7a7db642bdce06e82a0ba705856647b5483d6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCwxntlOtBXdTcM\nkrRTC8qobfrTSVjX3BVZ3KW2IlPTGSnn3r+g2BYh2TJJosiKDCwtnUX+jxG3l3Ff\nZGDNDIcUaiC4mWxXt4Q4ez+GMc5/MV59JbQgjgaw/vIJgmlTtdv72cQcFiT+ViW2\n+XdkTPwWT6p2NCmi+C+tSWll/ERtSSivFNrbBpsg/9hBu7bUS2uuRrGsyJhClfi2\nhu/FsaNMQ7Es9xrzvrTlnkYp9FShIZXmMWlMRW5BqCwrFVUifVOlhT4UBaIbh+3V\ny97WQNxdxtUIGYOeBj0HbfcgP+FfgIIfi1o4jffjSEdfqGVzL0RsefQxaRDxShCd\n/43jIAvjAgMBAAECggEAIPunomeq3+aa8tmck7IriembVzjkPsJtqWql8KnPAiA7\n1WuWTaiD2KTx4RNiX3+N7qTdnnWLVLoJCUdtWFTyDzkOCeN2d5diMDeuzpcUdF79\nxlP2m+xkCzpGZsfSZzATb5ZeJO9sz5e7SbyaLji/AFq074EkE6hDHQ4JgGHlUo54\nSh8I81qZc5LfLz211+lcm5FQRBdIOM+CV3r/crOiQsiHbwup2Ewm0G/6mHkoht8E\nSgfZXBiCrYr4xDf8i0jLii4R3qZpZgo0itt+lrgQoEnoP6w2g7aFf9Yf8jSriNSG\nd8wcjgXLpsnKlveC/evglsCptS2ohhq+1hTnR0pf4QKBgQDmVOlAX7pUrqOkmJrS\n8RH83Cme0ukjZ+C6ALb7zI5FCxxfbQomFZuaP56SCWTuR3PfWior7OKSxU6Gm1YX\nb1f09bq3H15iIZEy4yQZJ3OT6cnn/C3/f5fmwcSRdqK0yWBgSMuMMkKQWxN1I9rg\ne8mCXGxINa+5xeQXBm2SqbsZ9wKBgQDEeavqfTvC15kGT9csoCnYkVcxuPi9dPeA\nuGFaGmct4ndqCzqRIazg8A1ftJ8fVhZTH37WHp1AWiYYzsoHHXh3fu+KSlDTsDH3\nOFP/68te43rHfzku3u7FrwRt8jSgnysd+t8zZEmxzJfxdB4J1dctHSy7BLKbAXVy\nlRA8dJDCdQKBgQDVoXHKHD+lZWkwM7594cwuPEF6JuLHzQQZYKpXNy3Jifmh5G+i\nTS5KTbGUf5QWkT0+rtEodojbWpdvr8mU6NeqwvOP/086MyoKCbSkg/vl99QmD7bW\nIBDSnWvlAyT8Cz8RbtMj0EX+wAp2/m93ADkxaOmhu/Glm47ncDXW7wgzlwKBgA5l\nY+Vgm7phFcNSok+QxMArlhn8la08Hs59tBRoDttb1qgcfoQX1ZT9wd0bXPVs12Hr\n0t1ZjOgkMtpqfH8c97C5yk91topsRJz6sZz06Afh3yMy/Tuj9hbiBg8QSi7iusQN\nl8EqPgQbG58DhRfvZT7W/moNpBCbgMGOjov/doPpAoGAW21nzZ5lpgD7r5aZhvoR\nUzRMktmLhrRkySd05wOPLkwyc0GOXkNL0bxyzPHCwcS0eG8ySQg4Ty2GcZUTUkkx\npCb5uwtCVnRm/degyz0jNkMn1T3Q3pc3t9UrEzZ7hsAIjTCpIWyYb6PC36G3jESe\nes8bxh+EeyxT5Ye1X883Qqk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-borms@noga-foods-brasil.iam.gserviceaccount.com",
+  "client_id": "104457311352221587090",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-borms%40noga-foods-brasil.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
