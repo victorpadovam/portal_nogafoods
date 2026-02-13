@@ -14,7 +14,8 @@ use App\Http\Controllers\FlutterwaveV3Controller;
 use App\Http\Controllers\PaypalPaymentController;
 use App\Http\Controllers\StripePaymentController;
 use App\Http\Controllers\SslCommerzPaymentController;
-use App\Http\Controllers\DeepLinkController;
+
+use App\Http\Controllers\Api\V1\StoreController;
 
 
 /*
@@ -38,6 +39,8 @@ Route::get('metodo-de-pagamento-lojista', 'MetodoDePagamentosConfigLojistaContro
 Route::get('buscaMetodosDePagamentoECredenciaisMercadoPagoAPI/{store_id}', 'MetodoDePagamentosConfigLojistaController@buscaMetodosDePagamentoECredenciaisMercadoPagoAPI'); //api
 Route::post('metodo-de-pagamento-create', 'MetodoDePagamentosConfigLojistaController@updateOrCreate')->name('metodo-de-pagamento-create');
 
+
+Route::put('/update-view-store', [StoreController::class, 'updateViewStore'])->name('updateViewStore');
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('lang/{locale}', 'HomeController@lang')->name('lang');

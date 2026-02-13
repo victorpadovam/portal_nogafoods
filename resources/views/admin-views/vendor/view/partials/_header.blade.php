@@ -26,8 +26,12 @@
                         data-url="{{route('admin.store.application',[$store['id'],1])}}"
                         data-message="{{translate('messages.you_want_to_approve_this_application')}}"
                             href="javascript:"><i class="tio-checkmark-circle-outlined font-weight-bold pr-1"></i>{{translate('messages.approve')}}</a>
+                            
                     @endif
                 @endif
+
+                <button type="submit" class="btn btn--primary text-capitalize font-weight-bold float-right mr-2"
+                ><i class="tio-save font-weight-bold pr-1"></i>Salvar Alterações</button>
             </div>
         </div>
         @if($store->vendor->status)

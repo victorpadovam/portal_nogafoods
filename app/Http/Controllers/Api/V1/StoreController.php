@@ -13,9 +13,77 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\Models\Review;
 use Illuminate\Support\Facades\DB;
+use Brian2694\Toastr\Facades\Toastr;
+
 
 class StoreController extends Controller
 {
+
+public function updateViewStore(Request $request)
+{
+
+    DB::beginTransaction();
+
+    try {
+        $store = Store::findOrFail($request->id);
+        // Arquivos
+        $data = $request->only($store->getFillable());
+
+        // Upload do logo
+        if ($request->hasFile('logo')) {
+            $file = $request->file('logo');
+            $filename = time() . '.' . $file->getClientOriginalExtension();
+            $file->move(public_path('store'), $filename);
+            $data['logo'] = 'store/' . $filename;
+        }
+
+
+        if ($request->hasFile('destaque')) {
+            $data['destaque'] = Helpers::upload('store/', 'png', $request->file('destaque'));
+        }
+
+        if ($request->hasFile('owenerDocumentoComFotoFrente')) {
+          $data['owenerDocumentoComFotoFrente'] = Helpers::upload('store/documents/', 'png', $request->file('owenerDocumentoComFotoFrente'));
+        }
+
+        if ($request->hasFile('owenerDocumentoComFotoVerso')) {
+            $data['owenerDocumentoComFotoVerso'] = Helpers::upload('store/documents/', 'png', $request->file('owenerDocumentoComFotoVerso'));
+        }
+
+
+        if ($request->has('horarios')) {
+        $horarios = $request->input('horarios');
+
+        foreach ($horarios as $dia => &$dados) {
+            $dados['enabled'] = $dados['enabled'] == '1';
+
+            foreach ($dados['intervals'] as &$intervalo) {
+                $intervalo['start'] = $intervalo['start'] ?? '00:00';
+                $intervalo['end']   = $intervalo['end'] ?? '00:00';
+            }
+        }
+
+        $data['listaHorarioDeFuncionamentoDaLoja'] = json_encode($horarios, JSON_UNESCAPED_UNICODE);
+        }
+
+        $store->update($data);
+
+        DB::commit();
+
+        Toastr::success('Dados atualizados com sucesso.');
+
+        return redirect()->back();
+    } catch (\Throwable $e) {
+        DB::rollBack();
+
+        return redirect()
+            ->back()
+            ->with('error', 'Erro ao atualizar a loja');
+    }
+}
+
+
+
     public function get_stores(Request $request, $filter_data="all")
     {
         if (!$request->hasHeader('zoneId')) {

@@ -9,7 +9,7 @@
     <div class="page-header">
         <div class="d-flex flex-wrap justify-content-between">
             <h2 class="page-header-title text-capitalize my-2">
-                <img class="w--26" src="{{asset('/public/assets/admin/img/store.png')}}" alt="public">
+                <img class="w--26" src="{{asset('/assets/admin/img/store.png')}}" alt="public">
                 <span>
                     {{translate('messages.my_store_info')}}
                 </span>
@@ -82,8 +82,8 @@
                 <input class="toggle-switch-input dynamic-checkbox" type="checkbox" id="announcement_status"
                        data-id="announcement_status"
                        data-type="status"
-                       data-image-on='{{asset('/public/assets/admin/img/modal')}}/digital-payment-on.png'
-                       data-image-off="{{asset('/public/assets/admin/img/modal')}}/digital-payment-off.png"
+                       data-image-on='{{asset('/assets/admin/img/modal')}}/digital-payment-on.png'
+                       data-image-off="{{asset('/assets/admin/img/modal')}}/digital-payment-off.png"
                        data-title-on="{{translate('Do_you_want_to_enable_the_announcement')}}"
                        data-title-off="{{translate('Do_you_want_to_disable_the_announcement')}}"
                        data-text-on="<p>{{translate('User_will_able_to_see_the_Announcement_on_the_store_page.')}}</p>"

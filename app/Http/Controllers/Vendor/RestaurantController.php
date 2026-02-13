@@ -8,6 +8,8 @@ use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Http\Request;
 use App\CentralLogics\Helpers;
 use App\Models\Translation;
+use App\Models\Module;
+
 
 class RestaurantController extends Controller
 {
@@ -21,95 +23,65 @@ class RestaurantController extends Controller
     {
         $store = Helpers::get_store_data();
         $shop = Store::withoutGlobalScope('translate')->findOrFail($store['id']);
-        return view('vendor-views.shop.edit', compact('shop'));
-    }
+        $modules = Module::where('status', 1)->get();
+        $pagamentos = $shop->tipo_de_pagamento_da_loja;
 
-    public function update(Request $request)
-    {
-        $request->validate([
-            'name' => 'required',
-            'name.0' => 'required',
-            'address' => 'nullable|max:1000',
-            'contact' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10|max:20|unique:stores,phone,'.Helpers::get_store_id(),
-        ], [
-            'f_name.required' => translate('messages.first_name_is_required'),
-            'name.0.required'=>translate('default_name_is_required'),
-        ]);
-        $shop = Store::findOrFail(Helpers::get_store_id());
-        $shop->name = $request->name[array_search('default', $request->lang)];
-        $shop->address = $request->address[array_search('default', $request->lang)];
-        $shop->phone = $request->contact;
-        $shop->meta_title = $shop->name;
-
-        $shop->logo = $request->has('image') ? Helpers::update('store/', $shop->logo, 'png', $request->file('image')) : $shop->logo;
-
-        $shop->cover_photo = $request->has('photo') ? Helpers::update('store/cover/', $shop->cover_photo, 'png', $request->file('photo')) : $shop->cover_photo;
-
-        $shop->save();
-
-        $default_lang = str_replace('_', '-', app()->getLocale());
-        foreach($request->lang as $index=>$key)
-        {
-            if($default_lang == $key && !($request->name[$index])){
-                if ($key != 'default') {
-                    Translation::updateOrInsert(
-                        [
-                            'translationable_type' => 'App\Models\Store',
-                            'translationable_id' => $shop->id,
-                            'locale' => $key,
-                            'key' => 'name'
-                        ],
-                        ['value' => $shop->name]
-                    );
-                }
-            }else{
-
-                if ($request->name[$index] && $key != 'default') {
-                    Translation::updateOrInsert(
-                        ['translationable_type'  => 'App\Models\Store',
-                            'translationable_id'    => $shop->id,
-                            'locale'                => $key,
-                            'key'                   => 'name'],
-                        ['value'                 => $request->name[$index]]
-                    );
-                }
-            }
-            if($default_lang == $key && !($request->address[$index])){
-                if ($key != 'default') {
-                    Translation::updateOrInsert(
-                        [
-                            'translationable_type' => 'App\Models\Store',
-                            'translationable_id' => $shop->id,
-                            'locale' => $key,
-                            'key' => 'address'
-                        ],
-                        ['value' => $shop->address]
-                    );
-                }
-            }else{
-
-                if ($request->address[$index] && $key != 'default') {
-                    Translation::updateOrInsert(
-                        ['translationable_type'  => 'App\Models\Store',
-                            'translationable_id'    => $shop->id,
-                            'locale'                => $key,
-                            'key'                   => 'address'],
-                        ['value'                 => $request->address[$index]]
-                    );
-                }
-            }
+        if (is_string($pagamentos)) {
+            $pagamentos = json_decode($pagamentos, true);
         }
 
-        if($shop->vendor->userinfo) {
-            $userinfo = $shop->vendor->userinfo;
-            $userinfo->f_name = $shop->name;
-            $userinfo->image = $shop->logo;
-            $userinfo->save();
+        if (!is_array($pagamentos)) {
+            $pagamentos = [];
         }
 
-        Toastr::success(translate('messages.store_data_updated'));
-        return redirect()->route('vendor.shop.view');
+        $horarios = $store->listaHorarioDeFuncionamentoDaLoja;
+
+        if (is_string($horarios)) {
+            $horarios = json_decode($horarios, true);
+        }
+
+        $horarios = $horarios ?? [];
+        // dd( $shop);
+        return view('vendor-views.shop.edit', compact('shop', 'modules', "pagamentos", "horarios"));
     }
+
+public function update(Request $request)
+{
+    $shop = Store::findOrFail(Helpers::get_store_id());
+
+    $data = $request->except([
+        '_token',
+        'image',
+        'photo',
+        'horarios', 
+    ]);
+
+    $data['phone'] = $request->contact;
+    $data['meta_title'] = $request->name;
+
+    $shop->fill($data);
+
+
+        if ($request->hasFile('logo')) {
+            $data['logo'] = Helpers::upload('store/', 'png', $request->file('logo'));
+        }
+
+            if ($request->hasFile('logo')) {
+        $data['logo'] = Helpers::update(
+            'store/',
+            $shop->logo,
+            'png',
+            $request->file('logo')
+        );
+    }
+
+    $shop->save();
+
+    Toastr::success('Atualizado com sucesso');
+    return redirect()->back();
+}
+
+
 
     public function update_message(Request $request)
     {

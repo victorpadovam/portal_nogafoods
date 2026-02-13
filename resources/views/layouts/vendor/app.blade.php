@@ -20,9 +20,9 @@ $countryCode= strtolower($country?$country->value:'auto');
     <!-- Favicon -->
     @php($logo=\App\Models\BusinessSetting::where(['key'=>'icon'])->first())
     <link rel="shortcut icon" href="">
-    <link rel="icon" type="image/x-icon" href="{{\App\CentralLogics\Helpers::get_image_helper($logo,'value', asset('storage/app/public/business/').'/' . $logo?->value, asset('public/assets/admin/img/160x160/img1.jpg') ,'business/' )}}">
+    <link rel="icon" type="image/x-icon" href="{{\App\CentralLogics\Helpers::get_image_helper($logo,'value', asset('storage/app//business/').'/' . $logo?->value, asset('/assets/admin/img/160x160/img1.jpg') ,'business/' )}}">
     <!-- Font -->
-    <link href="{{asset('public/assets/admin/css/fonts.css')}}" rel="stylesheet">
+    <link href="{{asset('/assets/admin/css/fonts.css')}}" rel="stylesheet">
     <!-- Estilos adicionais (CSS) -->
 <style>
 
@@ -450,17 +450,416 @@ font-family: 'Roboto-Medium', sans-serif;
 
 
 </style>
+
+            <style>
+            /* Estilos personalizados para o Dropzone */
+            .dropzone-custom {
+                border: 2px dashed #3699FF !important;
+                border-radius: 10px !important;
+                background: #F3F6F9 !important;
+                min-height: 150px !important;
+                padding: 20px !important;
+            }
+            
+            .dropzone-custom .dz-message {
+                margin: 3em 0 !important;
+                color: #7E8299 !important;
+                font-size: 1.1rem !important;
+            }
+            
+            .dropzone-custom .dz-preview {
+                margin: 10px !important;
+            }
+            
+            .dropzone-custom .dz-preview .dz-image {
+                border-radius: 10px !important;
+                width: 120px !important;
+                height: 120px !important;
+            }
+            
+            .dropzone-custom .dz-preview .dz-details {
+                padding: 10px !important;
+            }
+            
+            .dropzone-custom .dz-preview .dz-success-mark,
+            .dropzone-custom .dz-preview .dz-error-mark {
+                margin-top: 40px !important;
+            }
+            
+            .logo-preview-container {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .edit-logo-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 10;
+    padding: 4px 6px;
+}
+            
+.logo-preview {
+    display: block;
+    max-width: 100%;
+    border-radius: 8px;
+}
+        </style>
+                <style>
+            /* Estilos personalizados para a área de upload */
+            .upload-area {
+                border: 2px dashed #3699FF;
+                border-radius: 10px;
+                background: #F3F6F9;
+                min-height: 150px;
+                padding: 40px 20px;
+                text-align: center;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .upload-area:hover {
+                background: #E1F0FF;
+                border-color: #0D6EFD;
+            }
+            
+            .upload-area.dragover {
+                background: #D1E9FF;
+                border-color: #0D6EFD;
+                transform: scale(1.02);
+            }
+            
+            .upload-area .upload-icon {
+                font-size: 48px;
+                color: #3699FF;
+                margin-bottom: 15px;
+            }
+            
+            .upload-area .upload-title {
+                font-size: 1.25rem;
+                font-weight: 600;
+                color: #2D3748;
+                margin-bottom: 8px;
+            }
+            
+            .upload-area .upload-subtitle {
+                font-size: 1rem;
+                color: #718096;
+                margin-bottom: 4px;
+            }
+            
+            .upload-area .upload-note {
+                font-size: 0.875rem;
+                color: #A0AEC0;
+            }
+            
+            .logo-preview-container {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            
+            .logo-preview {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid #3699FF;
+                margin: 0 auto;
+            }
+            
+            /* Estilo para quando há um arquivo selecionado */
+            .file-selected {
+                background: #E8F5E9;
+                border-color: #28A745;
+            }
+            
+            .file-selected .upload-icon {
+                color: #28A745;
+            }
+            
+            .file-info {
+                margin-top: 15px;
+                padding: 10px;
+                background: white;
+                border-radius: 5px;
+                border: 1px solid #E2E8F0;
+            }
+            
+            .file-name {
+                font-weight: 600;
+                color: #2D3748;
+            }
+            
+            .file-size {
+                font-size: 0.875rem;
+                color: #718096;
+            }
+            
+            .remove-file-btn {
+                margin-top: 10px;
+            }
+            
+            /* Ocultar input de arquivo */
+            .file-input {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                cursor: pointer;
+                z-index: 10;
+            }
+        </style>
+<style>
+    .logo-preview-container {
+        text-align: left;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+.logo-preview-wrapper {
+    position: relative !important;
+    display: inline-block;
+    overflow: visible !important;
+}
+
+
+    .logo-preview {
+        width: 100px; /* Tamanho da logo, ajuste conforme necessário */
+        height: 100px; /* Tamanho da logo, ajuste conforme necessário */
+        border-radius: 8px; /* Borda arredondada para a imagem */
+    }
+
+    #edit-logo-btn {
+        position: absolute; /* Posiciona o botão de editar em cima da imagem */
+        top: 5px; /* Ajuste da posição vertical do botão */
+        right: 5px; /* Ajuste da posição horizontal do botão */
+        background-color: #007bff; /* Cor do botão (azul, pode alterar) */
+        color: white; /* Cor do ícone */
+        border-radius: 50%; /* Faz o botão circular */
+        width: 30px; /* Tamanho do botão */
+        height: 30px; /* Tamanho do botão */
+        display: flex; /* Flexbox para centralizar o ícone */
+        justify-content: center; /* Alinha o conteúdo horizontalmente */
+        align-items: center; /* Alinha o conteúdo verticalmente */
+        border: none; /* Remove borda padrão */
+        cursor: pointer; /* Aponta o cursor para indicar que é clicável */
+    }
+
+    #edit-logo-btn:hover {
+        background-color: #0056b3; /* Cor do botão ao passar o mouse (pode alterar) */
+    }
+
+    .text-muted {
+        font-size: 14px;
+    }
+</style>
+<style>
+    .logo-preview-container {
+        text-align: left;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .logo-preview-wrapper {
+        position: relative;
+        display: inline-block;
+        width: 100px; /* Mesmo tamanho da imagem */
+        height: 100px; /* Mesmo tamanho da imagem */
+        /* border-radius: 50%; Faz o wrapper circular */
+        overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse */
+    }
+
+    .logo-preview {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%; /* Faz o círculo azul */
+        object-fit: cover;
+        border: 3px solid #3699FF; /* Borda azul */
+        display: block; /* Remove espaço extra abaixo da imagem */
+    }
+
+#edit-logo-btn {
+    position: absolute !important;
+    top: 8px;
+    right: 8px;
+    z-index: 9999 !important;
+}
+
+
+    #edit-logo-btn .bi-pencil {
+        font-size: 14px; /* Tamanho do ícone */
+        display: block; /* Garante que o ícone ocupe espaço */
+        line-height: 1; /* Remove espaçamento extra */
+        margin: 0; /* Remove margens */
+        padding: 0; /* Remove padding */
+    }
+
+    #edit-logo-btn:hover {
+        background-color: #0056b3; /* Cor do botão ao passar o mouse */
+        transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+        transition: transform 0.2s ease;
+    }
+
+    /* Opcional: Para visualização de exemplo */
+
+    .logo-preview-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+#logo-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    display: block;
+}
+
+#edit-photo-btn {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+
+    width: 28px;
+    height: 28px;
+
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    z-index: 10;
+
+    box-shadow: 0 2px 6px rgba(0,0,0,.25);
+}
+
+#edit-photo-btn i {
+    font-size: 12px;
+    color: #333;
+}
+
+.image-edit-wrapper {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+.image-edit-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.edit-image-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    width: 32px;
+    height: 32px;
+
+    background: #ffffff !important;
+    border: none;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    z-index: 999;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,.35);
+}
+
+.edit-image-btn i {
+    font-size: 13px;
+    color: #333;
+}
+
+/* LOGO - mantém quadrado */
+.image-edit-wrapper {
+    width: 140px;
+    height: 140px;
+}
+
+/* CAPA - maior (2:1) */
+.__custom-upload-img .image-edit-wrapper {
+    width: 300px !important;
+    /* height: 160px; */
+}
+
+/* imagem da capa ocupa tudo */
+.__custom-upload-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-header {
+    width: 100%; /* ou a largura do elemento base */
+    max-width: 1200px; /* se houver um limite */
+    margin: 0 auto; /* se for centralizado */
+    padding: 20px; /* ajuste conforme o elemento base */
+}
+
+
+.elemento-base, .page-header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.d-flex.justify-content-between.align-items-center.flex-wrap.gap-2 {
+    align-items: stretch; /* para que os filhos tenham a mesma altura */
+}
+
+
+.store-header-sticky {
+    position: sticky;
+    top: 70px; /* ajuste conforme a altura do header do admin */
+    z-index: 999;
+    background: #fff; /* mesma cor do fundo */
+}
+
+/* evita que o conteúdo "pule" */
+.store-header-sticky .page-header {
+    margin-bottom: 16px;
+}
+
+/* sombra leve quando está grudado */
+.store-header-sticky.is-sticky {
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+
+
+</style>
+       <!-- Dropzone CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/basic.min.css" />
+
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/vendor.min.css">
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/vendor/icon-set/style.css">
+    <link rel="stylesheet" href="{{asset('/assets/admin')}}/css/vendor.min.css">
+    <link rel="stylesheet" href="{{asset('/assets/admin')}}/vendor/icon-set/style.css">
     <!-- CSS Front Template -->
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/theme.minc619.css?v=1.0">
-    <link rel="stylesheet" href="{{asset('public/assets/admin/css/emogi-area.css')}}">
-    <link rel="stylesheet" href="{{asset('public/assets/admin/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('public/assets/admin/intltelinput/css/intlTelInput.css')}}">
-    <link rel="stylesheet" href="{{asset('public/assets/admin/css/owl.min.css')}}">
-    <link rel="stylesheet" href="{{asset('public/assets/admin/css/metodo-de-pagamento.css')}}">
+    <link rel="stylesheet" href="{{asset('/assets/admin')}}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('/assets/admin')}}/css/theme.minc619.css?v=1.0">
+    <link rel="stylesheet" href="{{asset('/assets/admin/css/emogi-area.css')}}">
+    <link rel="stylesheet" href="{{asset('/assets/admin/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('/assets/admin/intltelinput/css/intlTelInput.css')}}">
+    <link rel="stylesheet" href="{{asset('/assets/admin/css/owl.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/assets/admin/css/metodo-de-pagamento.css')}}">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -468,8 +867,8 @@ font-family: 'Roboto-Medium', sans-serif;
 
     @stack('css_or_js')
 
-    <script src="{{asset('public/assets/admin')}}/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/toastr.css">
+    <script src="{{asset('/assets/admin')}}/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
+    <link rel="stylesheet" href="{{asset('/assets/admin')}}/css/toastr.css">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     
@@ -741,7 +1140,7 @@ $val = (string) ($cash_in_hand_overflow_store_amount - (($cash_in_hand_overflow_
         <div class="col-md-12">
             <div id="loading" class="initial-hidden">
                 <div class="loading-inner">
-                    <img width="200" src="{{asset('public/assets/admin/img/loader.gif')}}">
+                    <img width="200" src="{{asset('/assets/admin/img/loader.gif')}}">
                 </div>
             </div>
         </div>
@@ -852,25 +1251,27 @@ $val = (string) ($cash_in_hand_overflow_store_amount - (($cash_in_hand_overflow_
 <!-- ========== END MAIN CONTENT ========== -->
 
 <!-- ========== END SECONDARY CONTENTS ========== -->
-<script src="{{asset('public/assets/admin')}}/js/custom.js"></script>
-<script src="{{asset('public/assets/admin')}}/js/firebase.min.js"></script>
+<script src="{{asset('/assets/admin')}}/js/custom.js"></script>
+<script src="{{asset('/assets/admin')}}/js/firebase.min.js"></script>
 <!-- JS Implementing Plugins -->
 
 @stack('script')
 
 <!-- JS Front -->
-<script src="{{asset('public/assets/admin')}}/js/vendor.min.js"></script>
-<script src="{{asset('public/assets/admin')}}/js/theme.min.js"></script>
-<script src="{{asset('public/assets/admin')}}/js/sweet_alert.js"></script>
-<script src="{{asset('public/assets/admin')}}/js/toastr.js"></script>
-<script src="{{asset('public/assets/admin')}}/js/emogi-area.js"></script>
-<script src="{{asset('public/assets/admin/js/owl.min.js')}}"></script>
-<script src="{{asset('public/assets/admin/js/app-blade/vendor.js')}}"></script>
-<script src="{{asset('public/assets/admin/js/metodo-de-pagamento.js')}}"></script>
+<script src="{{asset('/assets/admin')}}/js/vendor.min.js"></script>
+<script src="{{asset('/assets/admin')}}/js/theme.min.js"></script>
+<script src="{{asset('/assets/admin')}}/js/sweet_alert.js"></script>
+<script src="{{asset('/assets/admin')}}/js/toastr.js"></script>
+<script src="{{asset('/assets/admin')}}/js/emogi-area.js"></script>
+<script src="{{asset('/assets/admin/js/owl.min.js')}}"></script>
+<script src="{{asset('/assets/admin/js/app-blade/vendor.js')}}"></script>
+<script src="{{asset('/assets/admin/js/metodo-de-pagamento.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script>
+
 
 
 {!! Toastr::message() !!}
-<script src="{{asset('public/assets/admin/intltelinput/js/intlTelInput.min.js')}}"></script>
+<script src="{{asset('/assets/admin/intltelinput/js/intlTelInput.min.js')}}"></script>
 
 @if ($errors->any())
 
@@ -887,9 +1288,9 @@ $val = (string) ($cash_in_hand_overflow_store_amount - (($cash_in_hand_overflow_
 
 @stack('script_2')
 <audio id="myAudio">
-    <source src="{{asset('public/assets/admin/sound/notification_new.mp3')}}" type="audio/mpeg">
+    <source src="{{asset('/assets/admin/sound/notification_new.mp3')}}" type="audio/mpeg">
 </audio>
-    <script src="{{asset('public/assets/admin/js/view-pages/common.js')}}"></script>
+    <script src="{{asset('/assets/admin/js/view-pages/common.js')}}"></script>
 
 <script>
 var audio = document.getElementById("myAudio");
@@ -1194,7 +1595,7 @@ async function subscribeTokenToTopic(token, topic) {
             inputs.forEach(input => {
                 window.intlTelInput(input, {
                     initialCountry: "{{$countryCode}}",
-                    utilsScript: "{{ asset('public/assets/admin/intltelinput/js/utils.js') }}",
+                    utilsScript: "{{ asset('/assets/admin/intltelinput/js/utils.js') }}",
                     autoInsertDialCode: true,
                     nationalMode: false,
                     formatOnDisplay: false,
@@ -1381,7 +1782,7 @@ function sharePixCode() {
 
 <!-- IE Support -->
 <script>
-    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('public/assets/admin')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('/assets/admin')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
 </script>
 </body>
 </html>

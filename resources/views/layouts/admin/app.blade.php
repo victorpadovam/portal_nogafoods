@@ -29,6 +29,11 @@ $countryCode= strtolower($country?$country->value:'auto');
     <link rel="stylesheet" href="{{asset('/assets/admin/css/emogi-area.css')}}">
     <link rel="stylesheet" href="{{asset('/assets/admin/css/style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/dropzone.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+       <!-- Dropzone CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/basic.min.css" />
 
 
     <link rel="stylesheet" href="{{asset('/assets/admin/intltelinput/css/intlTelInput.css')}}">
@@ -214,6 +219,8 @@ $countryCode= strtolower($country?$country->value:'auto');
 <script src="{{asset('/assets/admin')}}/js/emogi-area.js"></script>
 <script src="{{asset('/assets/admin')}}/js/toastr.js"></script>
 <script src="{{asset('/assets/admin/js/app-blade/admin.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script>
+
 
 
 {!! Toastr::message() !!}

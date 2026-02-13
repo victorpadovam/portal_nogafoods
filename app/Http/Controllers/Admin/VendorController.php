@@ -542,7 +542,9 @@ class VendorController extends Controller
 
 
         }
-        return view('admin-views.vendor.view.index', compact('store', 'wallet'));
+
+        $modules = Module::where('status', 1)->get();
+        return view('admin-views.vendor.view.index', compact('store', 'wallet', 'modules'));
     }
 
     public function disbursement_export(Request $request,$id,$type)
