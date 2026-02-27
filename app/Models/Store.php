@@ -161,6 +161,7 @@ class Store extends Model
         'owenerDocumentoComFotoFrente',
         'owenerDocumentoComFotoVerso',
         'listaHorarioDeFuncionamentoDaLoja',
+      'contratoPdf',
     ];
 
     /**

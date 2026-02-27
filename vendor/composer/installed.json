@@ -539,6 +539,7 @@
                 "issues": "https://github.com/beyondcode/laravel-websockets/issues",
                 "source": "https://github.com/beyondcode/laravel-websockets/tree/1.14.1"
             },
+            "abandoned": true,
             "install-path": "../beyondcode/laravel-websockets"
         },
         {
@@ -7519,7 +7520,7 @@
             "support": {
                 "source": "https://github.com/paypal/Checkout-PHP-SDK/tree/1.0.2"
             },
-            "abandoned": true,
+            "abandoned": "paypal/paypal-server-sdk",
             "install-path": "../paypal/paypal-checkout-sdk"
         },
         {
@@ -7566,6 +7567,7 @@
                 "issues": "https://github.com/paypal/paypalhttp_php/issues",
                 "source": "https://github.com/paypal/paypalhttp_php/tree/1.0.1"
             },
+            "abandoned": true,
             "install-path": "../paypal/paypalhttp"
         },
         {

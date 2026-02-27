@@ -219,7 +219,7 @@ class VendorLoginController extends Controller
         // Dados do Step 6
         $store->menuDigitalLink = $request->menu_digital_link ?? null;
 
-        "2026-01-28-697a54b762369.png" // app/Http/Controllers/Api/V1/StoreController.php:38
+      
 
         // Arquivos
         if ($request->hasFile('logo')) {

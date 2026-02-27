@@ -74,43 +74,43 @@ class ComposerStaticInit6d88facda3ba726be620aab1f7442997
     );
 
     public static $prefixLengthsPsr4 = array (
-        'v' => 
+        'v' =>
         array (
             'voku\\' => 5,
         ),
-        's' => 
+        's' =>
         array (
             'setasign\\Fpdi\\' => 14,
         ),
-        'p' => 
+        'p' =>
         array (
             'phpseclib3\\' => 11,
         ),
-        'Z' => 
+        'Z' =>
         array (
             'ZipStream\\' => 10,
         ),
-        'X' => 
+        'X' =>
         array (
             'Xendit\\' => 7,
         ),
-        'W' => 
+        'W' =>
         array (
             'WpOrg\\Requests\\' => 15,
             'Whoops\\' => 7,
         ),
-        'U' => 
+        'U' =>
         array (
             'Unicodeveloper\\Paystack\\' => 24,
         ),
-        'T' => 
+        'T' =>
         array (
             'Twilio\\' => 7,
             'TijsVerkoyen\\CssToInlineStyles\\' => 31,
             'Tests\\' => 6,
             'Termwind\\' => 9,
         ),
-        'S' => 
+        'S' =>
         array (
             'Symfony\\Polyfill\\Uuid\\' => 22,
             'Symfony\\Polyfill\\Php83\\' => 23,
@@ -149,7 +149,7 @@ class ComposerStaticInit6d88facda3ba726be620aab1f7442997
             'Spatie\\Backtrace\\' => 17,
             'Sample\\' => 7,
         ),
-        'R' => 
+        'R' =>
         array (
             'Rize\\' => 5,
             'React\\Stream\\' => 13,
@@ -167,7 +167,7 @@ class ComposerStaticInit6d88facda3ba726be620aab1f7442997
             'Ramsey\\Uuid\\' => 12,
             'Ramsey\\Collection\\' => 18,
         ),
-        'P' => 
+        'P' =>
         array (
             'Pusher\\' => 7,
             'Psy\\' => 4,
@@ -187,18 +187,18 @@ class ComposerStaticInit6d88facda3ba726be620aab1f7442997
             'ParagonIE\\Sodium\\' => 17,
             'ParagonIE\\ConstantTime\\' => 23,
         ),
-        'O' => 
+        'O' =>
         array (
             'OpenSpout\\' => 10,
         ),
-        'N' => 
+        'N' =>
         array (
             'Nyholm\\Psr7\\' => 12,
             'Nwidart\\Modules\\' => 16,
             'NunoMaduro\\Collision\\' => 21,
             'Nette\\' => 6,
         ),
-        'M' => 
+        'M' =>
         array (
             'Mpdf\\PsrLogAwareTrait\\' => 22,
             'Mpdf\\PsrHttpMessageShim\\' => 24,
@@ -212,7 +212,7 @@ class ComposerStaticInit6d88facda3ba726be620aab1f7442997
             'Madnest\\Madzipper\\' => 18,
             'Maatwebsite\\Excel\\' => 18,
         ),
-        'L' => 
+        'L' =>
         array (
             'League\\Uri\\' => 11,
             'League\\OAuth2\\Server\\' => 21,
@@ -233,23 +233,23 @@ class ComposerStaticInit6d88facda3ba726be620aab1f7442997
             'Laravel\\Passport\\Database\\Factories\\' => 36,
             'Laravel\\Passport\\' => 17,
         ),
-        'K' => 
+        'K' =>
         array (
             'Kreait\\Firebase\\JWT\\' => 20,
             'Kreait\\Firebase\\' => 16,
         ),
-        'J' => 
+        'J' =>
         array (
             'JmesPath\\' => 9,
         ),
-        'I' => 
+        'I' =>
         array (
             'Iyzipay\\' => 8,
             'Intervention\\Image\\' => 19,
             'Illuminate\\Support\\' => 19,
             'Illuminate\\' => 11,
         ),
-        'G' => 
+        'G' =>
         array (
             'GuzzleHttp\\UriTemplate\\' => 23,
             'GuzzleHttp\\Psr7\\' => 16,
@@ -281,7 +281,7 @@ class ComposerStaticInit6d88facda3ba726be620aab1f7442997
             'GPBMetadata\\Google\\Api\\' => 23,
             'GPBMetadata\\ApiCore\\' => 20,
         ),
-        'F' => 
+        'F' =>
         array (
             'Fruitcake\\Cors\\' => 15,
             'Firebase\\JWT\\' => 13,
@@ -289,12 +289,12 @@ class ComposerStaticInit6d88facda3ba726be620aab1f7442997
             'Faker\\' => 6,
             'Facade\\IgnitionContracts\\' => 25,
         ),
-        'E' => 
+        'E' =>
         array (
             'Evenement\\' => 10,
             'Egulias\\EmailValidator\\' => 23,
         ),
-        'D' => 
+        'D' =>
         array (
             'Dotenv\\' => 7,
             'Doctrine\\Persistence\\' => 21,
@@ -311,7 +311,7 @@ class ComposerStaticInit6d88facda3ba726be620aab1f7442997
             'Database\\Seeders\\' => 17,
             'Database\\Factories\\' => 19,
         ),
-        'C' => 
+        'C' =>
         array (
             'CuyZ\\Valinor\\' => 13,
             'Cron\\' => 5,
@@ -321,7 +321,7 @@ class ComposerStaticInit6d88facda3ba726be620aab1f7442997
             'Carbon\\Doctrine\\' => 16,
             'Carbon\\' => 7,
         ),
-        'B' => 
+        'B' =>
         array (
             'Brick\\Math\\' => 11,
             'Brian2694\\Toastr\\' => 17,
@@ -331,7 +331,7 @@ class ComposerStaticInit6d88facda3ba726be620aab1f7442997
             'Beste\\' => 6,
             'Barryvdh\\Debugbar\\' => 18,
         ),
-        'A' => 
+        'A' =>
         array (
             'Aws\\' => 4,
             'App\\' => 4,
@@ -339,375 +339,375 @@ class ComposerStaticInit6d88facda3ba726be620aab1f7442997
     );
 
     public static $prefixDirsPsr4 = array (
-        'voku\\' => 
+        'voku\\' =>
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
         ),
-        'setasign\\Fpdi\\' => 
+        'setasign\\Fpdi\\' =>
         array (
             0 => __DIR__ . '/..' . '/setasign/fpdi/src',
         ),
-        'phpseclib3\\' => 
+        'phpseclib3\\' =>
         array (
             0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
         ),
-        'ZipStream\\' => 
+        'ZipStream\\' =>
         array (
             0 => __DIR__ . '/..' . '/maennchen/zipstream-php/src',
         ),
-        'Xendit\\' => 
+        'Xendit\\' =>
         array (
             0 => __DIR__ . '/..' . '/xendit/xendit-php/src',
         ),
-        'WpOrg\\Requests\\' => 
+        'WpOrg\\Requests\\' =>
         array (
             0 => __DIR__ . '/..' . '/rmccue/requests/src',
         ),
-        'Whoops\\' => 
+        'Whoops\\' =>
         array (
             0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
         ),
-        'Unicodeveloper\\Paystack\\' => 
+        'Unicodeveloper\\Paystack\\' =>
         array (
             0 => __DIR__ . '/..' . '/unicodeveloper/laravel-paystack/src',
         ),
-        'Twilio\\' => 
+        'Twilio\\' =>
         array (
             0 => __DIR__ . '/..' . '/twilio/sdk/src/Twilio',
         ),
-        'TijsVerkoyen\\CssToInlineStyles\\' => 
+        'TijsVerkoyen\\CssToInlineStyles\\' =>
         array (
             0 => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src',
         ),
-        'Tests\\' => 
+        'Tests\\' =>
         array (
             0 => __DIR__ . '/../..' . '/tests',
         ),
-        'Termwind\\' => 
+        'Termwind\\' =>
         array (
             0 => __DIR__ . '/..' . '/nunomaduro/termwind/src',
         ),
-        'Symfony\\Polyfill\\Uuid\\' => 
+        'Symfony\\Polyfill\\Uuid\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-uuid',
         ),
-        'Symfony\\Polyfill\\Php83\\' => 
+        'Symfony\\Polyfill\\Php83\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php83',
         ),
-        'Symfony\\Polyfill\\Php80\\' => 
+        'Symfony\\Polyfill\\Php80\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
         ),
-        'Symfony\\Polyfill\\Mbstring\\' => 
+        'Symfony\\Polyfill\\Mbstring\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
-        'Symfony\\Polyfill\\Intl\\Normalizer\\' => 
+        'Symfony\\Polyfill\\Intl\\Normalizer\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
         ),
-        'Symfony\\Polyfill\\Intl\\Idn\\' => 
+        'Symfony\\Polyfill\\Intl\\Idn\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-idn',
         ),
-        'Symfony\\Polyfill\\Intl\\Grapheme\\' => 
+        'Symfony\\Polyfill\\Intl\\Grapheme\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme',
         ),
-        'Symfony\\Polyfill\\Ctype\\' => 
+        'Symfony\\Polyfill\\Ctype\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
-        'Symfony\\Contracts\\Translation\\' => 
+        'Symfony\\Contracts\\Translation\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/translation-contracts',
         ),
-        'Symfony\\Contracts\\Service\\' => 
+        'Symfony\\Contracts\\Service\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/service-contracts',
         ),
-        'Symfony\\Contracts\\EventDispatcher\\' => 
+        'Symfony\\Contracts\\EventDispatcher\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher-contracts',
         ),
-        'Symfony\\Component\\Yaml\\' => 
+        'Symfony\\Component\\Yaml\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
         ),
-        'Symfony\\Component\\VarDumper\\' => 
+        'Symfony\\Component\\VarDumper\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
-        'Symfony\\Component\\Uid\\' => 
+        'Symfony\\Component\\Uid\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/uid',
         ),
-        'Symfony\\Component\\Translation\\' => 
+        'Symfony\\Component\\Translation\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
         ),
-        'Symfony\\Component\\String\\' => 
+        'Symfony\\Component\\String\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/string',
         ),
-        'Symfony\\Component\\Routing\\' => 
+        'Symfony\\Component\\Routing\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/routing',
         ),
-        'Symfony\\Component\\Process\\' => 
+        'Symfony\\Component\\Process\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/process',
         ),
-        'Symfony\\Component\\Mime\\' => 
+        'Symfony\\Component\\Mime\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/mime',
         ),
-        'Symfony\\Component\\Mailer\\' => 
+        'Symfony\\Component\\Mailer\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/mailer',
         ),
-        'Symfony\\Component\\HttpKernel\\' => 
+        'Symfony\\Component\\HttpKernel\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/http-kernel',
         ),
-        'Symfony\\Component\\HttpFoundation\\' => 
+        'Symfony\\Component\\HttpFoundation\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/http-foundation',
         ),
-        'Symfony\\Component\\Finder\\' => 
+        'Symfony\\Component\\Finder\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/finder',
         ),
-        'Symfony\\Component\\Filesystem\\' => 
+        'Symfony\\Component\\Filesystem\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/filesystem',
         ),
-        'Symfony\\Component\\EventDispatcher\\' => 
+        'Symfony\\Component\\EventDispatcher\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
         ),
-        'Symfony\\Component\\ErrorHandler\\' => 
+        'Symfony\\Component\\ErrorHandler\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/error-handler',
         ),
-        'Symfony\\Component\\CssSelector\\' => 
+        'Symfony\\Component\\CssSelector\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/css-selector',
         ),
-        'Symfony\\Component\\Console\\' => 
+        'Symfony\\Component\\Console\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
-        'Symfony\\Bridge\\PsrHttpMessage\\' => 
+        'Symfony\\Bridge\\PsrHttpMessage\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/psr-http-message-bridge',
         ),
-        'Stripe\\' => 
+        'Stripe\\' =>
         array (
             0 => __DIR__ . '/..' . '/stripe/stripe-php/lib',
         ),
-        'Spatie\\LaravelIgnition\\' => 
+        'Spatie\\LaravelIgnition\\' =>
         array (
-            0 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/laravel-ignition',
-            1 => __DIR__ . '/..' . '/spatie/laravel-ignition/src',
+            0 => __DIR__ . '/..' . '/spatie/laravel-ignition/src',
+            1 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/laravel-ignition',
         ),
-        'Spatie\\Ignition\\' => 
+        'Spatie\\Ignition\\' =>
         array (
-            0 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/ignition',
-            1 => __DIR__ . '/..' . '/spatie/ignition/src',
+            0 => __DIR__ . '/..' . '/spatie/ignition/src',
+            1 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/ignition',
         ),
-        'Spatie\\FlareClient\\' => 
+        'Spatie\\FlareClient\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/flare-client-php/src',
         ),
-        'Spatie\\ErrorSolutions\\' => 
+        'Spatie\\ErrorSolutions\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/error-solutions/src',
         ),
-        'Spatie\\Backtrace\\' => 
+        'Spatie\\Backtrace\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/backtrace/src',
         ),
-        'Sample\\' => 
+        'Sample\\' =>
         array (
             0 => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/samples',
         ),
-        'Rize\\' => 
+        'Rize\\' =>
         array (
             0 => __DIR__ . '/..' . '/rize/uri-template/src/Rize',
         ),
-        'React\\Stream\\' => 
+        'React\\Stream\\' =>
         array (
             0 => __DIR__ . '/..' . '/react/stream/src',
         ),
-        'React\\Socket\\' => 
+        'React\\Socket\\' =>
         array (
             0 => __DIR__ . '/..' . '/react/socket/src',
         ),
-        'React\\Promise\\' => 
+        'React\\Promise\\' =>
         array (
             0 => __DIR__ . '/..' . '/react/promise/src',
         ),
-        'React\\Http\\' => 
+        'React\\Http\\' =>
         array (
             0 => __DIR__ . '/..' . '/react/http/src',
         ),
-        'React\\EventLoop\\' => 
+        'React\\EventLoop\\' =>
         array (
             0 => __DIR__ . '/..' . '/react/event-loop/src',
         ),
-        'React\\Dns\\' => 
+        'React\\Dns\\' =>
         array (
             0 => __DIR__ . '/..' . '/react/dns/src',
         ),
-        'React\\Cache\\' => 
+        'React\\Cache\\' =>
         array (
             0 => __DIR__ . '/..' . '/react/cache/src',
         ),
-        'Razorpay\\Tests\\' => 
+        'Razorpay\\Tests\\' =>
         array (
             0 => __DIR__ . '/..' . '/razorpay/razorpay/tests',
         ),
-        'Razorpay\\Api\\' => 
+        'Razorpay\\Api\\' =>
         array (
             0 => __DIR__ . '/..' . '/razorpay/razorpay/src',
         ),
-        'Ratchet\\RFC6455\\' => 
+        'Ratchet\\RFC6455\\' =>
         array (
             0 => __DIR__ . '/..' . '/ratchet/rfc6455/src',
         ),
-        'Ratchet\\' => 
+        'Ratchet\\' =>
         array (
             0 => __DIR__ . '/..' . '/cboden/ratchet/src/Ratchet',
         ),
-        'Rap2hpoutre\\FastExcel\\' => 
+        'Rap2hpoutre\\FastExcel\\' =>
         array (
             0 => __DIR__ . '/..' . '/rap2hpoutre/fast-excel/src',
         ),
-        'Ramsey\\Uuid\\' => 
+        'Ramsey\\Uuid\\' =>
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
         ),
-        'Ramsey\\Collection\\' => 
+        'Ramsey\\Collection\\' =>
         array (
             0 => __DIR__ . '/..' . '/ramsey/collection/src',
         ),
-        'Pusher\\' => 
+        'Pusher\\' =>
         array (
             0 => __DIR__ . '/..' . '/pusher/pusher-php-server/src',
         ),
-        'Psy\\' => 
+        'Psy\\' =>
         array (
             0 => __DIR__ . '/..' . '/psy/psysh/src',
         ),
-        'Psr\\SimpleCache\\' => 
+        'Psr\\SimpleCache\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/simple-cache/src',
         ),
-        'Psr\\Log\\' => 
+        'Psr\\Log\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
         ),
-        'Psr\\Http\\Message\\' => 
+        'Psr\\Http\\Message\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/http-factory/src',
             1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
-        'Psr\\Http\\Client\\' => 
+        'Psr\\Http\\Client\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/http-client/src',
         ),
-        'Psr\\EventDispatcher\\' => 
+        'Psr\\EventDispatcher\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/event-dispatcher/src',
         ),
-        'Psr\\Container\\' => 
+        'Psr\\Container\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'Psr\\Clock\\' => 
+        'Psr\\Clock\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/clock/src',
         ),
-        'Psr\\Cache\\' => 
+        'Psr\\Cache\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
         ),
-        'PhpParser\\' => 
+        'PhpParser\\' =>
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
-        'PhpOption\\' => 
+        'PhpOption\\' =>
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
         ),
-        'PhpOffice\\PhpSpreadsheet\\' => 
+        'PhpOffice\\PhpSpreadsheet\\' =>
         array (
             0 => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet',
         ),
-        'PayPalHttp\\' => 
+        'PayPalHttp\\' =>
         array (
             0 => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp',
         ),
-        'PayPalCheckoutSdk\\' => 
+        'PayPalCheckoutSdk\\' =>
         array (
             0 => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk',
         ),
-        'ParagonIE\\Sodium\\' => 
+        'ParagonIE\\Sodium\\' =>
         array (
             0 => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced',
         ),
-        'ParagonIE\\ConstantTime\\' => 
+        'ParagonIE\\ConstantTime\\' =>
         array (
             0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
         ),
-        'OpenSpout\\' => 
+        'OpenSpout\\' =>
         array (
             0 => __DIR__ . '/..' . '/openspout/openspout/src',
         ),
-        'Nyholm\\Psr7\\' => 
+        'Nyholm\\Psr7\\' =>
         array (
             0 => __DIR__ . '/..' . '/nyholm/psr7/src',
         ),
-        'Nwidart\\Modules\\' => 
+        'Nwidart\\Modules\\' =>
         array (
             0 => __DIR__ . '/..' . '/nwidart/laravel-modules/src',
         ),
-        'NunoMaduro\\Collision\\' => 
+        'NunoMaduro\\Collision\\' =>
         array (
             0 => __DIR__ . '/..' . '/nunomaduro/collision/src',
         ),
-        'Nette\\' => 
+        'Nette\\' =>
         array (
             0 => __DIR__ . '/..' . '/nette/schema/src',
             1 => __DIR__ . '/..' . '/nette/utils/src',
         ),
-        'Mpdf\\PsrLogAwareTrait\\' => 
+        'Mpdf\\PsrLogAwareTrait\\' =>
         array (
             0 => __DIR__ . '/..' . '/mpdf/psr-log-aware-trait/src',
         ),
-        'Mpdf\\PsrHttpMessageShim\\' => 
+        'Mpdf\\PsrHttpMessageShim\\' =>
         array (
             0 => __DIR__ . '/..' . '/mpdf/psr-http-message-shim/src',
         ),
-        'Mpdf\\' => 
+        'Mpdf\\' =>
         array (
             0 => __DIR__ . '/..' . '/mpdf/mpdf/src',
         ),
-        'Monolog\\' => 
+        'Monolog\\' =>
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
-        'Modules\\' => 
+        'Modules\\' =>
         array (
             0 => __DIR__ . '/../..' . '/Modules',
         ),
-        'Mockery\\' => 
+        'Mockery\\' =>
         array (
             0 => __DIR__ . '/..' . '/mockery/mockery/library/Mockery',
         ),
-        'MercadoPago\\' => 
+        'MercadoPago\\' =>
         array (
             0 => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago',
             1 => __DIR__ . '/..' . '/mercadopago/dx-php/tests',
@@ -715,396 +715,396 @@ class ComposerStaticInit6d88facda3ba726be620aab1f7442997
             3 => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities',
             4 => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Shared',
         ),
-        'Matrix\\' => 
+        'Matrix\\' =>
         array (
             0 => __DIR__ . '/..' . '/markbaker/matrix/classes/src',
         ),
-        'MatanYadaev\\EloquentSpatial\\' => 
+        'MatanYadaev\\EloquentSpatial\\' =>
         array (
             0 => __DIR__ . '/..' . '/matanyadaev/laravel-eloquent-spatial/src',
         ),
-        'Madnest\\Madzipper\\' => 
+        'Madnest\\Madzipper\\' =>
         array (
             0 => __DIR__ . '/..' . '/madnest/madzipper/src/Madnest/Madzipper',
         ),
-        'Maatwebsite\\Excel\\' => 
+        'Maatwebsite\\Excel\\' =>
         array (
             0 => __DIR__ . '/..' . '/maatwebsite/excel/src',
         ),
-        'League\\Uri\\' => 
+        'League\\Uri\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/uri',
             1 => __DIR__ . '/..' . '/league/uri-interfaces',
         ),
-        'League\\OAuth2\\Server\\' => 
+        'League\\OAuth2\\Server\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/oauth2-server/src',
         ),
-        'League\\MimeTypeDetection\\' => 
+        'League\\MimeTypeDetection\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/mime-type-detection/src',
         ),
-        'League\\Flysystem\\Local\\' => 
+        'League\\Flysystem\\Local\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/flysystem-local',
         ),
-        'League\\Flysystem\\AwsS3V3\\' => 
+        'League\\Flysystem\\AwsS3V3\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/flysystem-aws-s3-v3',
         ),
-        'League\\Flysystem\\' => 
+        'League\\Flysystem\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/flysystem/src',
         ),
-        'League\\Event\\' => 
+        'League\\Event\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/event/src',
         ),
-        'League\\Config\\' => 
+        'League\\Config\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/config/src',
         ),
-        'League\\CommonMark\\' => 
+        'League\\CommonMark\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/commonmark/src',
         ),
-        'Lcobucci\\JWT\\' => 
+        'Lcobucci\\JWT\\' =>
         array (
             0 => __DIR__ . '/..' . '/lcobucci/jwt/src',
         ),
-        'Lcobucci\\Clock\\' => 
+        'Lcobucci\\Clock\\' =>
         array (
             0 => __DIR__ . '/..' . '/lcobucci/clock/src',
         ),
-        'Laravelpkg\\Laravelchk\\' => 
+        'Laravelpkg\\Laravelchk\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravelpkg/laravelchk/src',
         ),
-        'Laravel\\Tinker\\' => 
+        'Laravel\\Tinker\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
         ),
-        'Laravel\\SerializableClosure\\' => 
+        'Laravel\\SerializableClosure\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/serializable-closure/src',
         ),
-        'Laravel\\Sail\\' => 
+        'Laravel\\Sail\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/sail/src',
         ),
-        'Laravel\\Prompts\\' => 
+        'Laravel\\Prompts\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/prompts/src',
         ),
-        'Laravel\\Passport\\Database\\Factories\\' => 
+        'Laravel\\Passport\\Database\\Factories\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/passport/database/factories',
         ),
-        'Laravel\\Passport\\' => 
+        'Laravel\\Passport\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/passport/src',
         ),
-        'Kreait\\Firebase\\JWT\\' => 
+        'Kreait\\Firebase\\JWT\\' =>
         array (
             0 => __DIR__ . '/..' . '/kreait/firebase-tokens/src/JWT',
         ),
-        'Kreait\\Firebase\\' => 
+        'Kreait\\Firebase\\' =>
         array (
             0 => __DIR__ . '/..' . '/kreait/firebase-php/src/Firebase',
         ),
-        'JmesPath\\' => 
+        'JmesPath\\' =>
         array (
             0 => __DIR__ . '/..' . '/mtdowling/jmespath.php/src',
         ),
-        'Iyzipay\\' => 
+        'Iyzipay\\' =>
         array (
             0 => __DIR__ . '/..' . '/iyzico/iyzipay-php/src/Iyzipay',
         ),
-        'Intervention\\Image\\' => 
+        'Intervention\\Image\\' =>
         array (
             0 => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image',
         ),
-        'Illuminate\\Support\\' => 
+        'Illuminate\\Support\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Macroable',
             1 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections',
             2 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Conditionable',
         ),
-        'Illuminate\\' => 
+        'Illuminate\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
         ),
-        'GuzzleHttp\\UriTemplate\\' => 
+        'GuzzleHttp\\UriTemplate\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/uri-template/src',
         ),
-        'GuzzleHttp\\Psr7\\' => 
+        'GuzzleHttp\\Psr7\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
         ),
-        'GuzzleHttp\\Promise\\' => 
+        'GuzzleHttp\\Promise\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
         ),
-        'GuzzleHttp\\' => 
+        'GuzzleHttp\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
-        'Grpc\\Gcp\\' => 
+        'Grpc\\Gcp\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/grpc-gcp/src',
         ),
-        'Grpc\\' => 
+        'Grpc\\' =>
         array (
             0 => __DIR__ . '/..' . '/grpc/grpc/src/lib',
         ),
-        'Gregwar\\' => 
+        'Gregwar\\' =>
         array (
             0 => __DIR__ . '/..' . '/gregwar/captcha/src/Gregwar',
         ),
-        'GrahamCampbell\\ResultType\\' => 
+        'GrahamCampbell\\ResultType\\' =>
         array (
             0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
         ),
-        'Google\\Type\\' => 
+        'Google\\Type\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/src/Type',
         ),
-        'Google\\Rpc\\' => 
+        'Google\\Rpc\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/src/Rpc',
         ),
-        'Google\\Protobuf\\' => 
+        'Google\\Protobuf\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/protobuf/src/Google/Protobuf',
         ),
-        'Google\\LongRunning\\' => 
+        'Google\\LongRunning\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/longrunning/src/LongRunning',
         ),
-        'Google\\Iam\\' => 
+        'Google\\Iam\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/src/Iam',
         ),
-        'Google\\Cloud\\Storage\\' => 
+        'Google\\Cloud\\Storage\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud-storage/src',
         ),
-        'Google\\Cloud\\Core\\' => 
+        'Google\\Cloud\\Core\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud-core/src',
         ),
-        'Google\\Cloud\\' => 
+        'Google\\Cloud\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/src/Cloud',
         ),
-        'Google\\Auth\\' => 
+        'Google\\Auth\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/auth/src',
         ),
-        'Google\\Api\\' => 
+        'Google\\Api\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/src/Api',
         ),
-        'Google\\ApiCore\\LongRunning\\' => 
+        'Google\\ApiCore\\LongRunning\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/longrunning/src/ApiCore/LongRunning',
         ),
-        'Google\\ApiCore\\' => 
+        'Google\\ApiCore\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/gax/src',
         ),
-        'GPBMetadata\\Google\\Type\\' => 
+        'GPBMetadata\\Google\\Type\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/metadata/Type',
         ),
-        'GPBMetadata\\Google\\Rpc\\' => 
+        'GPBMetadata\\Google\\Rpc\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/metadata/Rpc',
         ),
-        'GPBMetadata\\Google\\Protobuf\\' => 
+        'GPBMetadata\\Google\\Protobuf\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/protobuf/src/GPBMetadata/Google/Protobuf',
         ),
-        'GPBMetadata\\Google\\Longrunning\\' => 
+        'GPBMetadata\\Google\\Longrunning\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/longrunning/metadata/Longrunning',
         ),
-        'GPBMetadata\\Google\\Logging\\' => 
+        'GPBMetadata\\Google\\Logging\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/metadata/Logging',
         ),
-        'GPBMetadata\\Google\\Iam\\' => 
+        'GPBMetadata\\Google\\Iam\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/metadata/Iam',
         ),
-        'GPBMetadata\\Google\\Cloud\\' => 
+        'GPBMetadata\\Google\\Cloud\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/metadata/Cloud',
         ),
-        'GPBMetadata\\Google\\Api\\' => 
+        'GPBMetadata\\Google\\Api\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/metadata/Api',
         ),
-        'GPBMetadata\\ApiCore\\' => 
+        'GPBMetadata\\ApiCore\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/gax/metadata/ApiCore',
         ),
-        'Fruitcake\\Cors\\' => 
+        'Fruitcake\\Cors\\' =>
         array (
             0 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
         ),
-        'Firebase\\JWT\\' => 
+        'Firebase\\JWT\\' =>
         array (
             0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),
-        'Fig\\Http\\Message\\' => 
+        'Fig\\Http\\Message\\' =>
         array (
             0 => __DIR__ . '/..' . '/fig/http-message-util/src',
         ),
-        'Faker\\' => 
+        'Faker\\' =>
         array (
             0 => __DIR__ . '/..' . '/fakerphp/faker/src/Faker',
         ),
-        'Facade\\IgnitionContracts\\' => 
+        'Facade\\IgnitionContracts\\' =>
         array (
             0 => __DIR__ . '/..' . '/facade/ignition-contracts/src',
         ),
-        'Evenement\\' => 
+        'Evenement\\' =>
         array (
             0 => __DIR__ . '/..' . '/evenement/evenement/src',
         ),
-        'Egulias\\EmailValidator\\' => 
+        'Egulias\\EmailValidator\\' =>
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/src',
         ),
-        'Dotenv\\' => 
+        'Dotenv\\' =>
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
         ),
-        'Doctrine\\Persistence\\' => 
+        'Doctrine\\Persistence\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/persistence/src/Persistence',
         ),
-        'Doctrine\\Inflector\\' => 
+        'Doctrine\\Inflector\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/src',
         ),
-        'Doctrine\\Deprecations\\' => 
+        'Doctrine\\Deprecations\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/deprecations/src',
         ),
-        'Doctrine\\DBAL\\' => 
+        'Doctrine\\DBAL\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/dbal/src',
         ),
-        'Doctrine\\Common\\Lexer\\' => 
+        'Doctrine\\Common\\Lexer\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/lexer/src',
         ),
-        'Doctrine\\Common\\Annotations\\' => 
+        'Doctrine\\Common\\Annotations\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
         ),
-        'Doctrine\\Common\\' => 
+        'Doctrine\\Common\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/common/src',
             1 => __DIR__ . '/..' . '/doctrine/event-manager/src',
         ),
-        'Dflydev\\DotAccessData\\' => 
+        'Dflydev\\DotAccessData\\' =>
         array (
             0 => __DIR__ . '/..' . '/dflydev/dot-access-data/src',
         ),
-        'Defuse\\Crypto\\' => 
+        'Defuse\\Crypto\\' =>
         array (
             0 => __DIR__ . '/..' . '/defuse/php-encryption/src',
         ),
-        'DeepCopy\\' => 
+        'DeepCopy\\' =>
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
-        'DebugBar\\' => 
+        'DebugBar\\' =>
         array (
             0 => __DIR__ . '/..' . '/php-debugbar/php-debugbar/src/DebugBar',
         ),
-        'Database\\Seeders\\' => 
+        'Database\\Seeders\\' =>
         array (
             0 => __DIR__ . '/../..' . '/database/seeders',
         ),
-        'Database\\Factories\\' => 
+        'Database\\Factories\\' =>
         array (
             0 => __DIR__ . '/../..' . '/database/factories',
         ),
-        'CuyZ\\Valinor\\' => 
+        'CuyZ\\Valinor\\' =>
         array (
             0 => __DIR__ . '/..' . '/cuyz/valinor/src',
         ),
-        'Cron\\' => 
+        'Cron\\' =>
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
         ),
-        'Composer\\Semver\\' => 
+        'Composer\\Semver\\' =>
         array (
             0 => __DIR__ . '/..' . '/composer/semver/src',
         ),
-        'Composer\\Pcre\\' => 
+        'Composer\\Pcre\\' =>
         array (
             0 => __DIR__ . '/..' . '/composer/pcre/src',
         ),
-        'Complex\\' => 
+        'Complex\\' =>
         array (
             0 => __DIR__ . '/..' . '/markbaker/complex/classes/src',
         ),
-        'Carbon\\Doctrine\\' => 
+        'Carbon\\Doctrine\\' =>
         array (
             0 => __DIR__ . '/..' . '/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine',
         ),
-        'Carbon\\' => 
+        'Carbon\\' =>
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
         ),
-        'Brick\\Math\\' => 
+        'Brick\\Math\\' =>
         array (
             0 => __DIR__ . '/..' . '/brick/math/src',
         ),
-        'Brian2694\\Toastr\\' => 
+        'Brian2694\\Toastr\\' =>
         array (
             0 => __DIR__ . '/..' . '/brian2694/laravel-toastr/src',
         ),
-        'BeyondCode\\LaravelWebSockets\\' => 
+        'BeyondCode\\LaravelWebSockets\\' =>
         array (
             0 => __DIR__ . '/..' . '/beyondcode/laravel-websockets/src',
         ),
-        'Beste\\Clock\\' => 
+        'Beste\\Clock\\' =>
         array (
             0 => __DIR__ . '/..' . '/beste/clock/src/Clock',
         ),
-        'Beste\\Cache\\' => 
+        'Beste\\Cache\\' =>
         array (
             0 => __DIR__ . '/..' . '/beste/in-memory-cache/src',
         ),
-        'Beste\\' => 
+        'Beste\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src/Beste',
         ),
-        'Barryvdh\\Debugbar\\' => 
+        'Barryvdh\\Debugbar\\' =>
         array (
             0 => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src',
         ),
-        'Aws\\' => 
+        'Aws\\' =>
         array (
             0 => __DIR__ . '/..' . '/aws/aws-sdk-php/src',
         ),
-        'App\\' => 
+        'App\\' =>
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
     public static $prefixesPsr0 = array (
-        'H' => 
+        'H' =>
         array (
-            'HTMLPurifier' => 
+            'HTMLPurifier' =>
             array (
                 0 => __DIR__ . '/..' . '/ezyang/htmlpurifier/library',
             ),
@@ -8842,235 +8842,6 @@ class ComposerStaticInit6d88facda3ba726be620aab1f7442997
         'Matrix\\Operators\\Multiplication' => __DIR__ . '/..' . '/markbaker/matrix/classes/src/Operators/Multiplication.php',
         'Matrix\\Operators\\Operator' => __DIR__ . '/..' . '/markbaker/matrix/classes/src/Operators/Operator.php',
         'Matrix\\Operators\\Subtraction' => __DIR__ . '/..' . '/markbaker/matrix/classes/src/Operators/Subtraction.php',
-        'MercadoPago\\AdvancedPayments\\AdvancedPayment' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/AdvancedPayments/AdvancedPayment.php',
-        'MercadoPago\\AdvancedPayments\\DisbursementRefund' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/AdvancedPayments/DisbursementRefund.php',
-        'MercadoPago\\AdvancedPayments\\Refund' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/AdvancedPayments/Refund.php',
-        'MercadoPago\\Annotation\\Attribute' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Annotation/Attribute.php',
-        'MercadoPago\\Annotation\\DenyDynamicAttribute' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Annotation/DenyDynamicAttribute.php',
-        'MercadoPago\\Annotation\\RequestParam' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Annotation/RequestParam.php',
-        'MercadoPago\\Annotation\\RestMethod' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Annotation/RestMethod.php',
-        'MercadoPago\\AuthorizedPayment' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/AuthorizedPayment.php',
-        'MercadoPago\\Card' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Card.php',
-        'MercadoPago\\CardToken' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/CardToken.php',
-        'MercadoPago\\Chargeback' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Chargeback.php',
-        'MercadoPago\\Client\\CardToken\\CardTokenClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/CardToken/CardTokenClient.php',
-        'MercadoPago\\Client\\Common\\RequestOptions' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/Common/RequestOptions.php',
-        'MercadoPago\\Client\\Customer\\CustomerCardClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/Customer/CustomerCardClient.php',
-        'MercadoPago\\Client\\Customer\\CustomerClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/Customer/CustomerClient.php',
-        'MercadoPago\\Client\\Customer\\CustomerCreateRequest' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/Customer/CustomerCreateRequest.php',
-        'MercadoPago\\Client\\IdentificationType\\IdentificationTypeClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/IdentificationType/IdentificationTypeClient.php',
-        'MercadoPago\\Client\\Invoice\\InvoiceClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/Invoice/InvoiceClient.php',
-        'MercadoPago\\Client\\MercadoPagoClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/MercadoPagoClient.php',
-        'MercadoPago\\Client\\MerchantOrder\\MerchantOrderClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/MerchantOrder/MerchantOrderClient.php',
-        'MercadoPago\\Client\\OAuth\\OAuthClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/OAuth/OAuthClient.php',
-        'MercadoPago\\Client\\OAuth\\OAuthCreateRequest' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/OAuth/OAuthCreateRequest.php',
-        'MercadoPago\\Client\\OAuth\\OAuthRefreshRequest' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/OAuth/OAuthRefreshRequest.php',
-        'MercadoPago\\Client\\PaymentMethod\\PaymentMethodClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/PaymentMethod/PaymentMethodClient.php',
-        'MercadoPago\\Client\\Payment\\PaymentCancelRequest' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/Payment/PaymentCancelRequest.php',
-        'MercadoPago\\Client\\Payment\\PaymentCaptureRequest' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/Payment/PaymentCaptureRequest.php',
-        'MercadoPago\\Client\\Payment\\PaymentClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/Payment/PaymentClient.php',
-        'MercadoPago\\Client\\Payment\\PaymentRefundClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/Payment/PaymentRefundClient.php',
-        'MercadoPago\\Client\\Payment\\PaymentRefundCreateRequest' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/Payment/PaymentRefundCreateRequest.php',
-        'MercadoPago\\Client\\Point\\PointClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/Point/PointClient.php',
-        'MercadoPago\\Client\\Point\\PointDeviceOperatingModeRequest' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/Point/PointDeviceOperatingModeRequest.php',
-        'MercadoPago\\Client\\Point\\PointPaymentIntentListRequest' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/Point/PointPaymentIntentListRequest.php',
-        'MercadoPago\\Client\\PreApprovalPlan\\PreApprovalPlanClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/PreApprovalPlan/PreApprovalPlanClient.php',
-        'MercadoPago\\Client\\PreApproval\\PreApprovalClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/PreApproval/PreApprovalClient.php',
-        'MercadoPago\\Client\\Preference\\PreferenceClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/Preference/PreferenceClient.php',
-        'MercadoPago\\Client\\User\\UserClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Client/User/UserClient.php',
-        'MercadoPago\\Config' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Config.php',
-        'MercadoPago\\Config\\AbstractConfig' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Config/AbstractConfig.php',
-        'MercadoPago\\Config\\Json' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Config/Json.php',
-        'MercadoPago\\Config\\ParserInterface' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Config/ParserInterface.php',
-        'MercadoPago\\Config\\Yaml' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Config/Yaml.php',
-        'MercadoPago\\Customer' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Customer.php',
-        'MercadoPago\\DiscountCampaign' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/DiscountCampaign.php',
-        'MercadoPago\\Documentation' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Shared/Documentation.php',
-        'MercadoPago\\DummyEntity' => __DIR__ . '/..' . '/mercadopago/dx-php/tests/DummyEntity.php',
-        'MercadoPago\\Entity' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entity.php',
-        'MercadoPago\\ErrorCause' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Generic/ErrorCause.php',
-        'MercadoPago\\Exceptions\\InvalidArgumentException' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Exceptions/InvalidArgumentException.php',
-        'MercadoPago\\Exceptions\\MPApiException' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Exceptions/MPApiException.php',
-        'MercadoPago\\FakeApiHub' => __DIR__ . '/..' . '/mercadopago/dx-php/tests/FakeApiHub.php',
-        'MercadoPago\\Http\\CurlRequest' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Http/CurlRequest.php',
-        'MercadoPago\\Http\\HttpRequest' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Http/HttpRequest.php',
-        'MercadoPago\\InstoreOrder' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/InstoreOrder.php',
-        'MercadoPago\\Invoice' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Invoice.php',
-        'MercadoPago\\Item' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Shared/Item.php',
-        'MercadoPago\\Manager' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Manager.php',
-        'MercadoPago\\MercadoPagoConfig' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/MercadoPagoConfig.php',
-        'MercadoPago\\MerchantOrder' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/MerchantOrder.php',
-        'MercadoPago\\MetaDataReader' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/MetaDataReader.php',
-        'MercadoPago\\Net\\CurlRequest' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Net/CurlRequest.php',
-        'MercadoPago\\Net\\HttpMethod' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Net/HttpMethod.php',
-        'MercadoPago\\Net\\HttpRequest' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Net/HttpRequest.php',
-        'MercadoPago\\Net\\MPDefaultHttpClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Net/MPDefaultHttpClient.php',
-        'MercadoPago\\Net\\MPHttpClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Net/MPHttpClient.php',
-        'MercadoPago\\Net\\MPRequest' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Net/MPRequest.php',
-        'MercadoPago\\Net\\MPResource' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Net/MPResource.php',
-        'MercadoPago\\Net\\MPResponse' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Net/MPResponse.php',
-        'MercadoPago\\Net\\MPSearchRequest' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Net/MPSearchRequest.php',
-        'MercadoPago\\OAuth' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/OAuth.php',
-        'MercadoPago\\POS' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/POS.php',
-        'MercadoPago\\Payer' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Shared/Payer.php',
-        'MercadoPago\\Payment' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Shared/Payment.php',
-        'MercadoPago\\PaymentMethod' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Shared/PaymentMethod.php',
-        'MercadoPago\\Plan' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Plan.php',
-        'MercadoPago\\Preapproval' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Preapproval.php',
-        'MercadoPago\\Preference' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Preference.php',
-        'MercadoPago\\RecuperableError' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Generic/RecuperableError.php',
-        'MercadoPago\\Refund' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Refund.php',
-        'MercadoPago\\Resources\\CardToken' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/CardToken.php',
-        'MercadoPago\\Resources\\Common\\Address' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Common/Address.php',
-        'MercadoPago\\Resources\\Common\\City' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Common/City.php',
-        'MercadoPago\\Resources\\Common\\Identification' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Common/Identification.php',
-        'MercadoPago\\Resources\\Common\\Paging' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Common/Paging.php',
-        'MercadoPago\\Resources\\Common\\Phone' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Common/Phone.php',
-        'MercadoPago\\Resources\\Common\\Source' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Common/Source.php',
-        'MercadoPago\\Resources\\Customer' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Customer.php',
-        'MercadoPago\\Resources\\CustomerCard' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/CustomerCard.php',
-        'MercadoPago\\Resources\\CustomerCardResult' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/CustomerCardResult.php',
-        'MercadoPago\\Resources\\CustomerSearch' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/CustomerSearch.php',
-        'MercadoPago\\Resources\\Customer\\Cardholder' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Customer/Cardholder.php',
-        'MercadoPago\\Resources\\Customer\\CustomerCardListResult' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Customer/CustomerCardListResult.php',
-        'MercadoPago\\Resources\\Customer\\CustomerSearchResult' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Customer/CustomerSearchResult.php',
-        'MercadoPago\\Resources\\Customer\\Issuer' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Customer/Issuer.php',
-        'MercadoPago\\Resources\\Customer\\PaymentMethod' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Customer/PaymentMethod.php',
-        'MercadoPago\\Resources\\Customer\\SecurityCode' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Customer/SecurityCode.php',
-        'MercadoPago\\Resources\\IdentificationTypeResult' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/IdentificationTypeResult.php',
-        'MercadoPago\\Resources\\IdentificationType\\IdentificationTypeListResult' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/IdentificationType/IdentificationTypeListResult.php',
-        'MercadoPago\\Resources\\Invoice' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Invoice.php',
-        'MercadoPago\\Resources\\InvoiceSearch' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/InvoiceSearch.php',
-        'MercadoPago\\Resources\\Invoice\\InvoiceSearchResult' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Invoice/InvoiceSearchResult.php',
-        'MercadoPago\\Resources\\Invoice\\Payment' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Invoice/Payment.php',
-        'MercadoPago\\Resources\\MerchantOrder' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/MerchantOrder.php',
-        'MercadoPago\\Resources\\MerchantOrderSearch' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/MerchantOrderSearch.php',
-        'MercadoPago\\Resources\\MerchantOrder\\Collector' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/MerchantOrder/Collector.php',
-        'MercadoPago\\Resources\\MerchantOrder\\Item' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/MerchantOrder/Item.php',
-        'MercadoPago\\Resources\\MerchantOrder\\MerchantOrderSearchResult' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/MerchantOrder/MerchantOrderSearchResult.php',
-        'MercadoPago\\Resources\\MerchantOrder\\Payer' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/MerchantOrder/Payer.php',
-        'MercadoPago\\Resources\\MerchantOrder\\Payment' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/MerchantOrder/Payment.php',
-        'MercadoPago\\Resources\\MerchantOrder\\ReceiverAddress' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/MerchantOrder/ReceiverAddress.php',
-        'MercadoPago\\Resources\\MerchantOrder\\ReceiverAddressCity' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/MerchantOrder/ReceiverAddressCity.php',
-        'MercadoPago\\Resources\\MerchantOrder\\ReceiverAddressCountry' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/MerchantOrder/ReceiverAddressCountry.php',
-        'MercadoPago\\Resources\\MerchantOrder\\ReceiverAddressState' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/MerchantOrder/ReceiverAddressState.php',
-        'MercadoPago\\Resources\\MerchantOrder\\Shipment' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/MerchantOrder/Shipment.php',
-        'MercadoPago\\Resources\\MerchantOrder\\ShippingEstimatedDelivery' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/MerchantOrder/ShippingEstimatedDelivery.php',
-        'MercadoPago\\Resources\\MerchantOrder\\ShippingOption' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/MerchantOrder/ShippingOption.php',
-        'MercadoPago\\Resources\\MerchantOrder\\ShippingSpeed' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/MerchantOrder/ShippingSpeed.php',
-        'MercadoPago\\Resources\\OAuth' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/OAuth.php',
-        'MercadoPago\\Resources\\Payment' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment.php',
-        'MercadoPago\\Resources\\PaymentIntent' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PaymentIntent.php',
-        'MercadoPago\\Resources\\PaymentIntentCancel' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PaymentIntentCancel.php',
-        'MercadoPago\\Resources\\PaymentIntentList' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PaymentIntentList.php',
-        'MercadoPago\\Resources\\PaymentIntentStatus' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PaymentIntentStatus.php',
-        'MercadoPago\\Resources\\PaymentMethodResult' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PaymentMethodResult.php',
-        'MercadoPago\\Resources\\PaymentMethod\\Bin' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PaymentMethod/Bin.php',
-        'MercadoPago\\Resources\\PaymentMethod\\CardNumber' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PaymentMethod/CardNumber.php',
-        'MercadoPago\\Resources\\PaymentMethod\\FinancialInstitutions' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PaymentMethod/FinancialInstitutions.php',
-        'MercadoPago\\Resources\\PaymentMethod\\PaymentMethodListResult' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PaymentMethod/PaymentMethodListResult.php',
-        'MercadoPago\\Resources\\PaymentMethod\\SecurityCode' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PaymentMethod/SecurityCode.php',
-        'MercadoPago\\Resources\\PaymentMethod\\Settings' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PaymentMethod/Settings.php',
-        'MercadoPago\\Resources\\PaymentRefund' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PaymentRefund.php',
-        'MercadoPago\\Resources\\PaymentRefundResult' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PaymentRefundResult.php',
-        'MercadoPago\\Resources\\PaymentSearch' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PaymentSearch.php',
-        'MercadoPago\\Resources\\Payment\\AdditionalInfo' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/AdditionalInfo.php',
-        'MercadoPago\\Resources\\Payment\\AdditionalInfoPayer' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/AdditionalInfoPayer.php',
-        'MercadoPago\\Resources\\Payment\\ApplicationData' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/ApplicationData.php',
-        'MercadoPago\\Resources\\Payment\\BankInfo' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/BankInfo.php',
-        'MercadoPago\\Resources\\Payment\\BankInfoCollector' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/BankInfoCollector.php',
-        'MercadoPago\\Resources\\Payment\\BankInfoPayer' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/BankInfoPayer.php',
-        'MercadoPago\\Resources\\Payment\\Barcode' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/Barcode.php',
-        'MercadoPago\\Resources\\Payment\\Card' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/Card.php',
-        'MercadoPago\\Resources\\Payment\\Cardholder' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/Cardholder.php',
-        'MercadoPago\\Resources\\Payment\\FeeDetails' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/FeeDetails.php',
-        'MercadoPago\\Resources\\Payment\\Metadata' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/Metadata.php',
-        'MercadoPago\\Resources\\Payment\\Payer' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/Payer.php',
-        'MercadoPago\\Resources\\Payment\\PaymentDiscounts' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/PaymentDiscounts.php',
-        'MercadoPago\\Resources\\Payment\\PaymentFee' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/PaymentFee.php',
-        'MercadoPago\\Resources\\Payment\\PaymentMethod' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/PaymentMethod.php',
-        'MercadoPago\\Resources\\Payment\\PaymentMethodData' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/PaymentMethodData.php',
-        'MercadoPago\\Resources\\Payment\\PaymentMethodRules' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/PaymentMethodRules.php',
-        'MercadoPago\\Resources\\Payment\\PaymentRefundListResult' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/PaymentRefundListResult.php',
-        'MercadoPago\\Resources\\Payment\\PaymentSearchResult' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/PaymentSearchResult.php',
-        'MercadoPago\\Resources\\Payment\\PointOfInteraction' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/PointOfInteraction.php',
-        'MercadoPago\\Resources\\Payment\\ReceiverAddress' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/ReceiverAddress.php',
-        'MercadoPago\\Resources\\Payment\\Shipments' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/Shipments.php',
-        'MercadoPago\\Resources\\Payment\\ThreeDSInfo' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/ThreeDSInfo.php',
-        'MercadoPago\\Resources\\Payment\\TransactionData' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/TransactionData.php',
-        'MercadoPago\\Resources\\Payment\\TransactionDetails' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Payment/TransactionDetails.php',
-        'MercadoPago\\Resources\\PointDeviceOperatingMode' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PointDeviceOperatingMode.php',
-        'MercadoPago\\Resources\\PointDevices' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PointDevices.php',
-        'MercadoPago\\Resources\\Point\\Device' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Point/Device.php',
-        'MercadoPago\\Resources\\Point\\Events' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Point/Events.php',
-        'MercadoPago\\Resources\\Point\\PaymentIntentAdditionalInfo' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Point/PaymentIntentAdditionalInfo.php',
-        'MercadoPago\\Resources\\Point\\PaymentIntentPayment' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Point/PaymentIntentPayment.php',
-        'MercadoPago\\Resources\\PreApproval' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PreApproval.php',
-        'MercadoPago\\Resources\\PreApprovalPlan' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PreApprovalPlan.php',
-        'MercadoPago\\Resources\\PreApprovalPlanSearch' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PreApprovalPlanSearch.php',
-        'MercadoPago\\Resources\\PreApprovalPlan\\AutoRecurring' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PreApprovalPlan/AutoRecurring.php',
-        'MercadoPago\\Resources\\PreApprovalPlan\\FreeTrial' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PreApprovalPlan/FreeTrial.php',
-        'MercadoPago\\Resources\\PreApprovalPlan\\PaymentMethodsAllowed' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PreApprovalPlan/PaymentMethodsAllowed.php',
-        'MercadoPago\\Resources\\PreApprovalPlan\\PreApprovalPlanListResult' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PreApprovalPlan/PreApprovalPlanListResult.php',
-        'MercadoPago\\Resources\\PreApprovalSearch' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PreApprovalSearch.php',
-        'MercadoPago\\Resources\\PreApproval\\AutoRecurring' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PreApproval/AutoRecurring.php',
-        'MercadoPago\\Resources\\PreApproval\\PreApprovalListResult' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PreApproval/PreApprovalListResult.php',
-        'MercadoPago\\Resources\\PreApproval\\Summarized' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PreApproval/Summarized.php',
-        'MercadoPago\\Resources\\Preference' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Preference.php',
-        'MercadoPago\\Resources\\PreferenceSearch' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/PreferenceSearch.php',
-        'MercadoPago\\Resources\\Preference\\BackUrls' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Preference/BackUrls.php',
-        'MercadoPago\\Resources\\Preference\\DifferentialPricing' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Preference/DifferentialPricing.php',
-        'MercadoPago\\Resources\\Preference\\FreeMethod' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Preference/FreeMethod.php',
-        'MercadoPago\\Resources\\Preference\\Item' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Preference/Item.php',
-        'MercadoPago\\Resources\\Preference\\Payer' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Preference/Payer.php',
-        'MercadoPago\\Resources\\Preference\\PaymentMethod' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Preference/PaymentMethod.php',
-        'MercadoPago\\Resources\\Preference\\PaymentMethods' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Preference/PaymentMethods.php',
-        'MercadoPago\\Resources\\Preference\\PaymentType' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Preference/PaymentType.php',
-        'MercadoPago\\Resources\\Preference\\PreferenceListResult' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Preference/PreferenceListResult.php',
-        'MercadoPago\\Resources\\Preference\\ReceiverAddress' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Preference/ReceiverAddress.php',
-        'MercadoPago\\Resources\\Preference\\RedirectUrls' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Preference/RedirectUrls.php',
-        'MercadoPago\\Resources\\Preference\\Shipments' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Preference/Shipments.php',
-        'MercadoPago\\Resources\\Preference\\Tax' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Preference/Tax.php',
-        'MercadoPago\\Resources\\Preference\\Track' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Preference/Track.php',
-        'MercadoPago\\Resources\\Preference\\TrackValues' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Preference/TrackValues.php',
-        'MercadoPago\\Resources\\Preference\\Urls' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/Preference/Urls.php',
-        'MercadoPago\\Resources\\User' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User.php',
-        'MercadoPago\\Resources\\User\\Address' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/Address.php',
-        'MercadoPago\\Resources\\User\\AlternativePhone' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/AlternativePhone.php',
-        'MercadoPago\\Resources\\User\\BillData' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/BillData.php',
-        'MercadoPago\\Resources\\User\\BuyerReputation' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/BuyerReputation.php',
-        'MercadoPago\\Resources\\User\\BuyerReputationCancelled' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/BuyerReputationCancelled.php',
-        'MercadoPago\\Resources\\User\\BuyerReputationNotYetRated' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/BuyerReputationNotYetRated.php',
-        'MercadoPago\\Resources\\User\\BuyerReputationTransactions' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/BuyerReputationTransactions.php',
-        'MercadoPago\\Resources\\User\\BuyerReputationUnrated' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/BuyerReputationUnrated.php',
-        'MercadoPago\\Resources\\User\\Cancellations' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/Cancellations.php',
-        'MercadoPago\\Resources\\User\\Claims' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/Claims.php',
-        'MercadoPago\\Resources\\User\\Company' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/Company.php',
-        'MercadoPago\\Resources\\User\\Context' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/Context.php',
-        'MercadoPago\\Resources\\User\\Credit' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/Credit.php',
-        'MercadoPago\\Resources\\User\\DelayedHandlingTime' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/DelayedHandlingTime.php',
-        'MercadoPago\\Resources\\User\\Metrics' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/Metrics.php',
-        'MercadoPago\\Resources\\User\\Phone' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/Phone.php',
-        'MercadoPago\\Resources\\User\\Ratings' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/Ratings.php',
-        'MercadoPago\\Resources\\User\\Sales' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/Sales.php',
-        'MercadoPago\\Resources\\User\\SellerReputation' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/SellerReputation.php',
-        'MercadoPago\\Resources\\User\\Status' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/Status.php',
-        'MercadoPago\\Resources\\User\\StatusBilling' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/StatusBilling.php',
-        'MercadoPago\\Resources\\User\\StatusBuyImmediatePayment' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/StatusBuyImmediatePayment.php',
-        'MercadoPago\\Resources\\User\\StatusList' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/StatusList.php',
-        'MercadoPago\\Resources\\User\\StatusShoppingCart' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/StatusShoppingCart.php',
-        'MercadoPago\\Resources\\User\\Transactions' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Resources/User/Transactions.php',
-        'MercadoPago\\RestClient' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/RestClient.php',
-        'MercadoPago\\SDK' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/SDK.php',
-        'MercadoPago\\SearchResultsArray' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Generic/SearchResultsArray.php',
-        'MercadoPago\\Serialization\\Mapper' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Serialization/Mapper.php',
-        'MercadoPago\\Serialization\\Serializer' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Serialization/Serializer.php',
-        'MercadoPago\\Shipments' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Shipments.php',
-        'MercadoPago\\Subscription' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Subscription.php',
-        'MercadoPago\\Tax' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Shared/Tax.php',
-        'MercadoPago\\Track' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Shared/Track.php',
-        'MercadoPago\\TrackValues' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Entities/Shared/TrackValues.php',
-        'MercadoPago\\Version' => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago/Version.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegration' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegrationAssertPostConditions' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegrationAssertPostConditions.php',
         'Mockery\\Adapter\\Phpunit\\MockeryTestCase' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryTestCase.php',
