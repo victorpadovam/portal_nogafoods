@@ -4615,4 +4615,5 @@
   'O atributo :deve ser maior que :valor.' => 'O atributo :deve ser maior que :valor.',
   'cannot_change_status_after_delivered' => 'Cannot change status after delivered',
   'Have_n’t_Selected_Yet.' => 'Have n’t Selected Yet.',
+  'Go to page :page' => 'Go to page :page',
 );

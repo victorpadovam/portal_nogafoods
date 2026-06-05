@@ -32,36 +32,41 @@ class VendorLoginController extends Controller
         if ($validator->fails()) {
             return response()->json(['errors' => Helpers::error_processor($validator)], 403);
         }
-        $vendor_type= $request->vendor_type;
+        $vendor_type = $request->vendor_type;
 
         $data = [
             'email' => $request->email,
             'password' => $request->password
         ];
 
-        if($vendor_type == 'owner'){
+        if ($vendor_type == 'owner') {
             if (auth('vendor')->attempt($data)) {
                 $token = $this->genarate_token($request['email']);
                 $vendor = Vendor::where(['email' => $request['email']])->first();
 
-            $storeSubscriptionCheck=  $this->storeSubscriptionCheck($vendor?->stores[0],$vendor,$token);
+                $storeSubscriptionCheck = $this->storeSubscriptionCheck($vendor?->stores[0], $vendor, $token);
 
-                    if(data_get($storeSubscriptionCheck,'type') != null){
-                        return response()->json(data_get($storeSubscriptionCheck,'data'), data_get($storeSubscriptionCheck,'code'));
-                    }
-
+                if (data_get($storeSubscriptionCheck, 'type') != null) {
+                    return response()->json(data_get($storeSubscriptionCheck, 'data'), data_get($storeSubscriptionCheck, 'code'));
+                }
 
                 $vendor->auth_token = $token;
                 $vendor->save();
-                return response()->json(['token' => $token, 'zone_wise_topic'=> $vendor->stores[0]->zone->store_wise_topic], 200);
-            }  else {
+
+                $zone_wise_topic = $vendor->stores[0]?->zone?->store_wise_topic ?? null;
+
+                return response()->json([
+                    'token' => $token,
+                    'zone_wise_topic' => $zone_wise_topic
+                ], 200);
+            } else {
                 $errors = [];
                 array_push($errors, ['code' => 'auth-001', 'message' => translate('Credential_do_not_match,_please_try_again')]);
                 return response()->json([
                     'errors' => $errors
                 ], 401);
             }
-        }elseif($vendor_type == 'employee'){
+        } elseif ($vendor_type == 'employee') {
 
             if (auth('vendor_employee')->attempt($data)) {
                 $token = $this->genarate_token($request['email']);
@@ -75,15 +80,15 @@ class VendorLoginController extends Controller
                 //     ], 403);
                 // }
 
-                $storeSubscriptionCheck=  $this->storeSubscriptionCheck($vendor?->stores,$vendor,$token);
-                if(data_get($storeSubscriptionCheck,'type') != null){
-                    return response()->json(data_get($storeSubscriptionCheck,'data'), data_get($storeSubscriptionCheck,'code'));
+                $storeSubscriptionCheck =  $this->storeSubscriptionCheck($vendor?->stores, $vendor, $token);
+                if (data_get($storeSubscriptionCheck, 'type') != null) {
+                    return response()->json(data_get($storeSubscriptionCheck, 'data'), data_get($storeSubscriptionCheck, 'code'));
                 }
 
                 $vendor->auth_token = $token;
                 $vendor->save();
-                $role = $vendor->role ? json_decode($vendor->role->modules):[];
-                return response()->json(['token' => $token, 'zone_wise_topic'=> $vendor->store->zone->store_wise_topic, 'role'=>$role], 200);
+                $role = $vendor->role ? json_decode($vendor->role->modules) : [];
+                return response()->json(['token' => $token, 'zone_wise_topic' => $vendor->store->zone->store_wise_topic, 'role' => $role], 200);
             } else {
                 $errors = [];
                 array_push($errors, ['code' => 'auth-001', 'message' => translate('Credential_do_not_match,_please_try_again')]);
@@ -98,15 +103,13 @@ class VendorLoginController extends Controller
                 'errors' => $errors
             ], 401);
         }
-
     }
 
     private function genarate_token($email)
     {
         $token = Str::random(120);
         $is_available = Vendor::where('auth_token', $token)->where('email', '!=', $email)->count();
-        if($is_available)
-        {
+        if ($is_available) {
             $this->genarate_token($email);
         }
         return $token;
@@ -115,8 +118,7 @@ class VendorLoginController extends Controller
     public function register(Request $request)
     {
         $status = BusinessSetting::where('key', 'toggle_store_registration')->first();
-        if(!isset($status) || $status->value == '0')
-        {
+        if (!isset($status) || $status->value == '0') {
             return response()->json(['errors' => Helpers::error_processor('self-registration', translate('messages.store_self_registration_disabled'))]);
         }
 
@@ -137,7 +139,7 @@ class VendorLoginController extends Controller
             // 'module_id' => 'required',
             // 'logo' => 'required',
             // 'tax' => 'required'
-        ],[
+        ], [
             'password.required' => translate('The password is required'),
             // 'password.min_length' => translate('The password must be at least :min characters long'),
             // 'password.mixed' => translate('The password must contain both uppercase and lowercase letters'),
@@ -147,13 +149,12 @@ class VendorLoginController extends Controller
             // 'password.uncompromised' => translate('The password is compromised. Please choose a different one'),
         ]);
 
-        if($request->zone_id)
-        {
+        if ($request->zone_id) {
             $zone = Zone::query()
-            ->whereContains('coordinates', new Point($request->latitude, $request->longitude, POINT_SRID))
-            ->where('id',$request->zone_id)
-            ->first();
-            if(!$zone){
+                ->whereContains('coordinates', new Point($request->latitude, $request->longitude, POINT_SRID))
+                ->where('id', $request->zone_id)
+                ->first();
+            if (!$zone) {
                 $validator->getMessageBag()->add('latitude', translate('messages.coordinates_out_of_zone'));
                 return response()->json(['errors' => Helpers::error_processor($validator)], 403);
             }
@@ -219,7 +220,7 @@ class VendorLoginController extends Controller
         // Dados do Step 6
         $store->menuDigitalLink = $request->menu_digital_link ?? null;
 
-      
+
 
         // Arquivos
         if ($request->hasFile('logo')) {
@@ -242,7 +243,7 @@ class VendorLoginController extends Controller
         }
 
 
-       // Dados do Step 7
+        // Dados do Step 7
         $store->contractReceiveOption = $request->contract_receive_option ?? null;
         $store->howYouMeetNogaFoods = $request->how_you_meet_noga_foods ?? null;
         $store->receivedOurRepresentative = $request->received_our_representative ?? null;
@@ -281,8 +282,7 @@ class VendorLoginController extends Controller
         $store->store_business_model = 'none';
         $store->save();
         $store->module->increment('stores_count');
-        if(config('module.'.$store->module->module_type)['always_open'])
-        {
+        if (config('module.' . $store->module->module_type)['always_open']) {
             StoreLogic::insert_schedule($store->id);
         }
 
@@ -292,65 +292,66 @@ class VendorLoginController extends Controller
         // }
         // Translation::insert($data);
 
-        try{
-            $admin= Admin::where('role_id', 1)->first();
+        try {
+            $admin = Admin::where('role_id', 1)->first();
             $mail_status = Helpers::get_mail_status('registration_mail_status_store');
-            if(config('mail.status') && $mail_status == '1'){
-                Mail::to($request['email'])->send(new \App\Mail\VendorSelfRegistration('pending', $vendor->f_name.' '.$vendor->l_name));
+            if (config('mail.status') && $mail_status == '1') {
+                Mail::to($request['email'])->send(new \App\Mail\VendorSelfRegistration('pending', $vendor->f_name . ' ' . $vendor->l_name));
             }
             $mail_status = Helpers::get_mail_status('store_registration_mail_status_admin');
-            if(config('mail.status') && $mail_status == '1'){
-                Mail::to($admin['email'])->send(new \App\Mail\StoreRegistration('pending', $vendor->f_name.' '.$vendor->l_name));
+            if (config('mail.status') && $mail_status == '1') {
+                Mail::to($admin['email'])->send(new \App\Mail\StoreRegistration('pending', $vendor->f_name . ' ' . $vendor->l_name));
             }
-        }catch(\Exception $ex){
+        } catch (\Exception $ex) {
             info($ex->getMessage());
         }
 
         return response()->json([
-            'store_id'=> $store->id,
-            'message'=>translate('messages.application_placed_successfully')],200);
+            'store_id' => $store->id,
+            'message' => translate('messages.application_placed_successfully')
+        ], 200);
     }
 
 
 
 
 
-    private function storeSubscriptionCheck($store, $vendor,$token){
+    private function storeSubscriptionCheck($store, $vendor, $token)
+    {
 
 
-        if($store?->store_business_model == 'subscription' && $store->store_sub_trans && $store->store_sub_trans->transaction_status == 0){
-            return [ 'type' => 'pending_payment',
-                        'code' => 200,
-                        'data'=> ['pending_payment' => ['id' =>$store->store_sub_trans->id ]
-                        ]
-                ];
+        if ($store?->store_business_model == 'subscription' && $store->store_sub_trans && $store->store_sub_trans->transaction_status == 0) {
+            return [
+                'type' => 'pending_payment',
+                'code' => 200,
+                'data' => [
+                    'pending_payment' => ['id' => $store->store_sub_trans->id]
+                ]
+            ];
         }
 
-        if( $store?->store_business_model == 'none')
-        {
-            return [ 'type' => 'subscribed',
-            'code' => 200,
-            'data'=> [
-                'subscribed' => ['store_id' => $store?->id, 'type' => 'new_join']
+        if ($store?->store_business_model == 'none') {
+            return [
+                'type' => 'subscribed',
+                'code' => 200,
+                'data' => [
+                    'subscribed' => ['store_id' => $store?->id, 'type' => 'new_join']
                 ]
             ];
         }
 
 
-        if($store->status == 0 && $vendor->status == 0)
-        {
+        if ($store->status == 0 && $vendor->status == 0) {
 
-            return [ 'type' => 'errors',
-            'code' => 403,
-            'data'=> [
-                'errors' => [
-                    ['code' => 'auth-002', 'message' => translate('messages.Your_registration_is_not_approved_yet._You_can_login_once_admin_approved_the_request')]
+            return [
+                'type' => 'errors',
+                'code' => 403,
+                'data' => [
+                    'errors' => [
+                        ['code' => 'auth-002', 'message' => translate('messages.Your_registration_is_not_approved_yet._You_can_login_once_admin_approved_the_request')]
                     ]
                 ]
             ];
-
-
-
         }
         // elseif($store->status == 0 && $vendor->status == 1){
 
@@ -366,15 +367,16 @@ class VendorLoginController extends Controller
         // }
 
 
-        if ( $store?->store_business_model == 'subscription' ) {
+        if ($store?->store_business_model == 'subscription') {
             $store_sub = $store?->store_sub;
             if (isset($store_sub)) {
-                if ($store_sub?->mobile_app == 0 ) {
-                    return [ 'type' => 'errors',
-                    'code' => 401,
-                    'data'=> [
-                        'errors' => [
-                            ['code' => 'no_mobile_app', 'message' => translate('messages.Your Subscription Plan is not Active for Mobile App')]
+                if ($store_sub?->mobile_app == 0) {
+                    return [
+                        'type' => 'errors',
+                        'code' => 401,
+                        'data' => [
+                            'errors' => [
+                                ['code' => 'no_mobile_app', 'message' => translate('messages.Your Subscription Plan is not Active for Mobile App')]
                             ]
                         ]
                     ];
@@ -383,48 +385,49 @@ class VendorLoginController extends Controller
         }
 
 
-        if( $store?->store_business_model == 'unsubscribed' && isset($store?->store_sub_update_application)){
+        if ($store?->store_business_model == 'unsubscribed' && isset($store?->store_sub_update_application)) {
             $vendor->auth_token = $token;
             $vendor?->save();
-                    if($store?->store_sub_update_application?->max_product== 'unlimited' ){
-                        $max_product_uploads= -1;
-                    }
-                    else{
-                        $max_product_uploads= $store?->store_sub_update_application?->max_product - $store?->foods()?->count();
-                        if($max_product_uploads > 0){
-                            $max_product_uploads ?? 0;
-                        }elseif($max_product_uploads < 0) {
-                            $max_product_uploads = 0;
-                        }
-                    }
+            if ($store?->store_sub_update_application?->max_product == 'unlimited') {
+                $max_product_uploads = -1;
+            } else {
+                $max_product_uploads = $store?->store_sub_update_application?->max_product - $store?->foods()?->count();
+                if ($max_product_uploads > 0) {
+                    $max_product_uploads ?? 0;
+                } elseif ($max_product_uploads < 0) {
+                    $max_product_uploads = 0;
+                }
+            }
 
-                $data['subscription_other_data'] =  [
-                    'total_bill'=>  (float) SubscriptionTransaction::where('store_id', $store->id)->where('package_id', $store?->store_sub_update_application?->package?->id)->sum('paid_amount'),
-                    'max_product_uploads' => (int) $max_product_uploads,
-                    ];
+            $data['subscription_other_data'] =  [
+                'total_bill' =>  (float) SubscriptionTransaction::where('store_id', $store->id)->where('package_id', $store?->store_sub_update_application?->package?->id)->sum('paid_amount'),
+                'max_product_uploads' => (int) $max_product_uploads,
+            ];
 
-            return response()->json(['token' => $token, 'zone_wise_topic'=> $store?->zone?->store_wise_topic,
-            'subscription' => $store?->store_sub_update_application,
-            'subscription_other_data' => $data['subscription_other_data'],
-            'balance' =>(float)($vendor?->wallet?->balance ?? 0),
-            'store_id' =>(int) $store?->id,
-            'package' => $store?->store_sub_update_application?->package
+            return response()->json([
+                'token' => $token,
+                'zone_wise_topic' => $store?->zone?->store_wise_topic,
+                'subscription' => $store?->store_sub_update_application,
+                'subscription_other_data' => $data['subscription_other_data'],
+                'balance' => (float)($vendor?->wallet?->balance ?? 0),
+                'store_id' => (int) $store?->id,
+                'package' => $store?->store_sub_update_application?->package
             ], 205);
         }
 
-        if($store?->store_business_model == 'unsubscribed' && !isset($store?->store_sub_update_application)){
+        if ($store?->store_business_model == 'unsubscribed' && !isset($store?->store_sub_update_application)) {
 
-            return [ 'type' => 'subscribed',
-            'code' => 200,
-            'data'=> [
-                'subscribed' => [
-                    'store_id' => $store?->id, 'type' => 'new_join']
+            return [
+                'type' => 'subscribed',
+                'code' => 200,
+                'data' => [
+                    'subscribed' => [
+                        'store_id' => $store?->id,
+                        'type' => 'new_join'
+                    ]
                 ]
             ];
-
         }
- return null ;
+        return null;
     }
-
-
 }

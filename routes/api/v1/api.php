@@ -3,7 +3,6 @@
 use App\WebSockets\Handler\DMLocationSocketHandler;
 use Illuminate\Support\Facades\Route;
 use BeyondCode\LaravelWebSockets\Facades\WebSocketsRouter;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -15,16 +14,25 @@ use BeyondCode\LaravelWebSockets\Facades\WebSocketsRouter;
 |
 */
 
+Route::post('aprovacao', 'FluxoAprovacaoLojaController@salvar');
+Route::get('aprovacao-buscar', 'FluxoAprovacaoLojaController@buscar');
+Route::post('aprovar', 'FluxoAprovacaoLojaController@aprovar');
+Route::post('verificarStatusPorEmail', 'FluxoAprovacaoLojaController@verificarStatusPorEmail');
+
+
+
+
+
 Route::post('detalhesLoja', 'PagamentoMercadoPagoController@detalhesLoja');
 
-    Route::get('get_latest_products_deplink', 'PagamentoMercadoPagoController@get_latest_products_deeplink');
+Route::get('get_latest_products_deplink', 'PagamentoMercadoPagoController@get_latest_products_deeplink');
 
-        Route::get('detalhesLoja/{id}', 'PagamentoMercadoPagoController@get_product_deplink');
+Route::get('detalhesLoja/{id}', 'PagamentoMercadoPagoController@get_product_deplink');
 
 
-   Route::post('debitaSaldoApagarDoLojista', 'VendorController@debitaSaldoApagarDoLojista');
+Route::post('debitaSaldoApagarDoLojista', 'VendorController@debitaSaldoApagarDoLojista');
 
-   Route::post('verificaVendedorContaSuspensa', 'VendorController@verificaVendedorContaSuspensa');
+Route::post('verificaVendedorContaSuspensa', 'VendorController@verificaVendedorContaSuspensa');
 
 
 
@@ -50,7 +58,7 @@ Route::get('buscarPagamentoPix', 'PagamentoMercadoPagoController@buscarPagamento
 
 Route::post('handlePaymentNotification', 'PagamentoMercadoPagoController@handlePaymentNotification');
 
-Route::get('/buscaDadosDePagamento/{pagamento_id}','PagamentoMercadoPagoController@verificaStatusPagamento');
+Route::get('/buscaDadosDePagamento/{pagamento_id}', 'PagamentoMercadoPagoController@verificaStatusPagamento');
 
 Route::get('/sucesso-pagamento', function () {
     return view('payment-mercadopago.layout_sucesso_pix');

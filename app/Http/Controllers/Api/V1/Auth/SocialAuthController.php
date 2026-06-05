@@ -284,12 +284,24 @@ class SocialAuthController extends Controller
                     }
                 }
             } else {
-                return response()->json([
-                    'errors' => [
-                        ['code' => 'auth-004', 'message' => translate('messages.email_already_exists')]
-                    ]
-                ], 403);
-            }
+    // Usuário já existe -> atualiza dados sociais se quiser
+    if (empty($user->social_id)) {
+        if (!isset($data['id']) && !isset($data['kid']) && !isset($data['sub'])) {
+            return response()->json(['error' => 'wrong credential.'], 403);
+        }
+
+        $pk = isset($data['id']) ? $data['id'] : (isset($data['kid']) ? $data['kid'] : $data['sub']);
+
+        $user->login_medium = $request['medium'];
+        $user->social_id = $pk;
+
+        // só seta phone se vier preenchido e o usuário não tiver
+        if (!$user->phone && $request->phone) {
+            $user->phone = $request->phone;
+        }
+
+        $user->save();
+    }
 
             $data = [
                 'phone' => $user->phone,

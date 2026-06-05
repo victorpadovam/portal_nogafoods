@@ -10,7 +10,7 @@
     <div class="content container-fluid">
         <!-- Page Header -->
         <div class="page-header">
-            <h1 class="page-header-title"><i class="tio-filter-list"></i> {{translate('messages.new_joining_requests')}}</h1>
+            <h1 class="page-header-title"><i class="tio-filter-list"></i> Novas solicitações de adesão</h1>
             <div class="page-header-select-wrapper">
 
                 @if(!isset(auth('admin')->user()->zone_id))
@@ -33,7 +33,7 @@
                         <!-- Nav -->
                         <ul class="nav nav-tabs mb-3 border-0 nav--tabs">
                             <li class="nav-item">
-                                <a class="nav-link active" href="{{ route('admin.store.pending-requests') }}"   aria-disabled="true">{{translate('messages.pending_stores')}}</a>
+                                <a class="nav-link active" href="{{ route('admin.store.pending-requests') }}"   aria-disabled="true">Lojas Pendentes</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('admin.store.deny-requests') }}"  aria-disabled="true">{{translate('messages.denied_stores')}}</a>

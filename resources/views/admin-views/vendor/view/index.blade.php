@@ -452,15 +452,47 @@
     .modal-backdrop {
         z-index: 1050 !important;
     }
+
+    #snackbar {
+        visibility: hidden;
+        min-width: 250px;
+        background-color: #323232;
+        color: #fff;
+        text-align: center;
+        border-radius: 8px;
+        padding: 14px;
+        position: fixed;
+        z-index: 9999;
+        left: 50%;
+        bottom: 30px;
+        transform: translateX(-50%);
+        font-size: 14px;
+        transition: 0.3s ease;
+    }
+
+    #snackbar.show {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #snackbar.success {
+        background-color: #28a745;
+    }
+
+    #snackbar.error {
+        background-color: #dc3545;
+    }
 </style>
 
 @section('content')
+
 
     @if (!empty($store->contratoPdf))
         @php
             $contratoPdf = $store->contratoPdf;
             $contratoPdf = str_replace('https://portal.nogafoods.com.br/', '', $contratoPdf);
-            $contratoUrl = 'https://portal.nogafoods.com.br/storage/app/public/store/contracts/' . $contratoPdf;
+            $contratoUrl = 'https://hel1.your-objectstorage.com/arquivos-nogafoods/store/contracts/' . $contratoPdf;
+
         @endphp
 
         <div class="modal fade" id="contratoModal" tabindex="-1" role="dialog" aria-labelledby="contratoModalLabel"
